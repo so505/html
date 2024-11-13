@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta name="" content="">
+        <meta name="" content="">
+        <meta charset="utf-8">
+        <title>레이아웃 연습</title>
+    </head>
+    <body>
+        <P>Div는 웹사이트를 크게 묶는 레이아웃부터 쇼구모로 묶는 레이아웃까지 모든 그룹을 대표적으로 담당하는 태그이다.</P>
+        <p>1행 내에서 2개이상의 요소를 가지면 Div를 묶는다.</p>
+        <P>강조 의미(em)가 아닌 디자인적으로 표현하고 싶은 인라인위치가 있다면 span을 사용한다.</P>
+        <hr>
+        <h1>div와 span 사용 예시</h1>
+        <h2>div 사용예시</h2>
+        <div class="group"> <!--레이어를 묶는 그룹-->
+            <h1>제목</h1> <!--레이어-->
+            <p>경로</p>
+            <p>내용</p>
+        </div id="group1"> <!-- 아이디 명칭은 중복불가-->
+        <h2>span 사용예시</h2>
+        <div>
+            <p><em>강조글자</em> <span>그냥디자인글자</span></p>
+            <h1>제목</h1>
+            <P>내용</P>
+            <p>
+                <span class="important"> <!-- 클래스는 중복가능-->
+                    <em>강조1</em> <strong>강조2</strong>
+                </span>
+                그냥글자
+                <span class="important">
+                    <em>강조3</em> <strong>강조4</strong>
+                </span>
+            </p>
+        </div>
+        <P>아이디(id)속성은 대분류 레이아웃에 사용</P>
+        <p>클래스(class)속성은 중분류에서 소분류 레이아웃 등 작은 그룹에 사용</p>
+    </body>
+</html>
