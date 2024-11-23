@@ -1,3 +1,7 @@
+
+* 
+
+
 # HTML
 ## HTML 기초
 * `title` 제목태그
@@ -8,6 +12,9 @@
 * `ctrl+/` 한 줄 주석
 * `Shift + Alt + A` 블록 주석
 * `Shift + Alt + 방향키` 해당 방향으로 복제
+* `ctrl+| 파일분할해서 보기 아래반양 ctrl+k 누른상태에서 |
+* `alt+z 자동줄바꿈
+* 
 ## HTML 기본 작성법
 * `<시작태그></닫기태그>`
 * `<시작태그 속성="값" 속성="값"></닫기태그>`
@@ -45,6 +52,7 @@
 1. `<a href=""></a>`
 2. `<a href="">클릭대상</a>`
 3. `<a href="연결경로">클릭대상</a>`
+4. `a href=””  targer=””>링크 위치 속성  (새창으로 열림)`
 ## div태그 작성 순서
 1. `<div></div>`
 2. `<div>그룹대상</div>`
@@ -58,4 +66,36 @@
 3. 위 2번으로 이동 시 클릭해야하는 대상에 href속성으로 #아이디명 입력하기
 ## 파비콘 복붙용 
 * `<link rel="shortcut icon" href="이미지경로작성위치" type="image/x-icon">
-   <link rel="icon" href="이미지경로작성위치" type="image/x-icon">` 
+   <link rel="icon" href="이미지경로작성위치" type="image/x-icon">`
+## 이미지 태그 <img> 인라인
+`*src 이미지 경로 속성의 값으로는 상대경로 방식으로 작성하는것을 권장합니다`
+`<**img src=”url” art=””**>     src필수! `    
+`**alt**=대체텍스트 필수!! (카카오로고X >카카오로 읽는다=의미전달)`
+`의미없는 이미지일경우 alt값을 공란으로 비워둔다`
+## 동영상 태그 <Video> 블럭
+`**비디오 작성하는 방법 1**`
+`<video src=”동영상 경로”></video>`
+
+`- 비디오 작성하는 방법2`
+`<video>-확장자가 여러개일경우`
+`<source src=”동영상 경로” type=”동영상타입1”>`
+`<source src=”동영상 경로” type=”동영상타입2”>`
+`</video>`
+### 동영상 속성=autoplay, muted, controls, loop 
+`무조건 **autoplay, muted** 같이 작성해야한다.`
+`<video src="./image_video/video/coffee.mp4" controls **poster**="./image_video/images/case1.jpg"></video>`
+`포스터도 가능하다. 노션확인`
+
+## 순차/비순차태그 
+`순서가 있는 목록 <ol><li></li></ol>`
+`순서가 없는 목록 <ul><li></li></ul>`
+`정의형 목록은 dl, dt, dd 3가지 태그로 이루어져 있습니다`
+`(목록태그먼저 DIv생략)`
+
+## css 
+
+
+
+
+
+   
