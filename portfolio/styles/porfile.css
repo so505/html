@@ -1,0 +1,73 @@
+body {background-color: rgba(14, 102, 108,1);}
+.profile {
+    font-family:'Noto Sans', 'Noto Sans KR', 'Gothic';
+    font-weight:700;
+    
+    
+
+}
+.profile h1{
+    font-size: 3.75rem;
+    color: rgb(255, 255, 255,1);
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    letter-spacing: 0.025;
+}
+.profile h1 span{
+    color: rgb(255, 255, 255,0);
+    letter-spacing: 0.025;
+}
+.profile p {
+    font-family:'Noto Sans kR', 'Noto Sans', 'Gothic';
+    font-size: 1.50rem;
+    font-weight:400;
+    color: rgb(255, 255, 255,1);
+    letter-spacing: 0.025;
+
+}
+.profile .basic {
+    font-family:'Noto Sans kR', 'Noto Sans', 'Gothic'; 
+    font-size: 1.25rem;
+    font-weight:400;
+    color: rgb(255, 255, 255,1);
+    letter-spacing: 0.025;
+}
+.profile .basic li{
+}
+.profile h2{
+    font-family: 'Gothic', 'Noto Sans kR','Noto Sans';
+    font-size: 1.88rem;
+    font-weight:600;
+    color: rgb(255, 255, 255,1);
+    letter-spacing: 0.025;
+    background-color: rgba(3,74,79,1) ;
+
+
+
+
+}
+.profile .experience {
+    list-style: none;
+    font-family: 'Gothic', 'Noto Sans kR','Noto Sans';
+    font-size: 1.06rem;
+    color: rgb(255, 255, 255,1);
+    font-weight:400;
+    letter-spacing: -0.068em;
+
+}
+.profile .experience li{}
+.profile .experience li .date {}
+.profile .experience li .name {}
+.profile .license {
+    list-style: none;
+    font-family: 'Gothic', 'Noto Sans kR','Noto Sans';
+    font-size: 1.06rem;
+    color: rgb(255, 255, 255,1);
+    font-weight:400;
+    letter-spacing: -0.068em;
+}
+.profile .license li {}
+.profile .license li .date {}
+.profile .license li .name {}
+
+
+
