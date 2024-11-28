@@ -6,7 +6,10 @@
 #wrap header nav {}
 #wrap header nav ul {}
 #wrap header nav ul li {}
-#wrap header nav ul li a {}
+#wrap header nav ul li a {
+    font-weight: 600;
+    font-size: 1.13rem;
+}
 #wrap header .right_menu {}
 #wrap header .right_menu a {}
 #wrap header .right_menu ul {}
@@ -14,28 +17,148 @@
 #wrap header .right_menu ul li a {}
 #wrap header .right_menu ul li a img {}
 #wrap main {}
-#wrap main .path {}
+#wrap main .path {
+    background-color: #f9f9f9;
+    font-size: 0.88rem;
+    text-align: right;
+}
 #wrap main .path a {}
 #wrap main .path em {}
-#wrap main h1 {}
-#wrap main p {}
-#wrap main .bg {}
-#wrap main .bg .part_wrap_01 {}
-#wrap main .bg .part_wrap_01 p {}
-#wrap main .bg .part_wrap_01 p img {}
-#wrap main .bg .part_wrap_01 .part_1 {}
+#wrap main h1 {
+    text-align: center;
+    font-size: 3.13rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+    margin-bottom:25px;
+}
+#wrap main >p { 
+    text-align: center; font-size: 1.19rem;
+    font-weight: 500;
+    margin-bottom:86px;
+}
+#wrap main .bg {
+    background-color: #f9f9f9);
+    
+}
+#wrap main .bg .part_wrap_01 {
+    background-color: aqua;
+    width: 1140px;
+    margin:0 auto;
+
+}
+#wrap main .bg .part_wrap_01 >p { 
+    display: inline-block;
+    width: 657px;
+    margin-right: 20px;
+    
+
+}
+#wrap main .bg .part_wrap_01 .part_1 {
+    text-align: left;
+    display: inline-block;
+    width: 358px;
+
+
+
+}
 #wrap main .bg .part_wrap_01 .part_1 .photo_01 {}
-#wrap main .bg .part_wrap_01 .part_1 .photo_01 img {}
-#wrap main .bg .part_wrap_01 .part_1 h2 {}
-#wrap main .bg .part_wrap_01 .part_1 p {}
-#wrap main .bg .part_wrap_02 {}
-#wrap main .bg .part_wrap_02 p {}
-#wrap main .bg .part_wrap_02 p img {}
-#wrap main .bg .part_wrap_02 .part_2 {}
-#wrap main .bg .part_wrap_02 .part_2 .photo_02 {}
-#wrap main .bg .part_wrap_02 .part_2 .photo_02 img {}
-#wrap main .bg .part_wrap_02 .part_2 h2 {}
-#wrap main .bg .part_wrap_02 .part_2 p {}
+#wrap main .bg .part_wrap_01 .part_1 h2 {
+    font-size: 1.88rem;
+    font-weight: 600;
+    margin-bottom: 29px;
+}
+#wrap main .bg .part_wrap_01 .part_1 p:nth-of-type(2) {
+    color:#555;
+    width: 358px;
+    text-align: left;
+    margin-bottom: 250px;
+
+
+}
+#wrap main .bg .part_wrap_02 {
+    background-color: yellow;
+    width: 1140px;
+    margin:0 auto;
+    padding-left: 76px;
+    
+}
+
+#wrap main .bg .part_wrap_02 .part_2 {
+    display: inline-block;
+    margin-right: 52px;
+}
+
+#wrap main .bg .part_wrap_02 .part_2 .photo_02 {
+
+    
+}
+
+#wrap main .bg .part_wrap_02 .part_2 p:nth-of-type(2) {
+    display: inline-block;
+    width: 351px;
+    color:#555;
+}
+
+#wrap main .bg .part_wrap_02 .part_2 h2 {
+    font-size: 1.88rem;
+    font-weight: 600;
+    margin-bottom: 29px;
+    
+}
+#wrap main .bg .part_wrap_02 >p {
+    display: inline-block;
+    width: 657px;
+    text-align: right;
+    margin-bottom: 250px;
+}
+
+
+    
+#wrap main .bg .part_wrap_03 {
+    background-color: blue;
+    width: 1140px;
+    margin:0 auto;
+}
+#wrap main .bg .part_wrap_03 p {}
+#wrap main .bg .part_wrap_03 p img {}
+#wrap main .bg .part_wrap_03 .part_3 {}
+#wrap main .bg .part_wrap_03 .part_3 .photo_03 {}
+#wrap main .bg .part_wrap_03 .part_3 .photo_03 img {}
+#wrap main .bg .part_wrap_03 .part_3 h2 {
+    font-size: 1.88rem;
+    font-weight: 600;
+}
+#wrap main .bg .part_wrap_03 .part_3 p {color:#555;}
+#wrap main .bg .part_wrap_04 {
+    background-color: coral;
+    width: 1140px;
+    margin:0 auto;
+}
+#wrap main .bg .part_wrap_04 p {}
+#wrap main .bg .part_wrap_04 p img {}
+#wrap main .bg .part_wrap_04 .part_4 {}
+#wrap main .bg .part_wrap_04 .part_4 .photo_04 {}
+#wrap main .bg .part_wrap_04 .part_4 .photo_04 img {}
+#wrap main .bg .part_wrap_04 .part_4 h2 {
+    font-size: 1.88rem;
+    font-weight: 600;
+}
+#wrap main .bg .part_wrap_04 .part_4 p {color:#555;}
+#wrap main .bg .part_wrap_05 {
+    background-color: aqua;
+    width: 1140px;
+    margin:0 auto;
+}
+#wrap main .bg .part_wrap_05 p {}
+#wrap main .bg .part_wrap_05 p img {}
+#wrap main .bg .part_wrap_05 .part_5{}
+#wrap main .bg .part_wrap_05 .part_5 .photo_05 {}
+#wrap main .bg .part_wrap_05 .part_5 .photo_05 img {}
+#wrap main .bg .part_wrap_05 .part_5 h2 {
+    font-size: 1.88rem;
+    font-weight: 600;
+}
+#wrap main .bg .part_wrap_05 .part_5 p {color:#555;}
 
 
 
