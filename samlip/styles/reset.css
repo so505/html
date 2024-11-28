@@ -4,6 +4,7 @@ span,em,img,strong,sub,sup,del,s,q,mark,code,
 header,nav,main,footer,article,section,aside {
     line-height:1.0; font-size:1.0em; font-weight:normal; margin:0; padding:0; font-style:normal;
     font-family: 'pretendard', sans-serif;
+    box-sizing: border-box; /* 패딩을 수정해도 가로세로 전체크기 고정 리셋파일에..*/
 }
 ol, li, ul, {list-style:none;}
 a {color:black; text-decoration:none;}

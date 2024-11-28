@@ -1,0 +1,41 @@
+#wrap {}
+#wrap header {}
+#wrap header h1 {}
+#wrap header h1 a {}
+#wrap header h1 a img {}
+#wrap header nav {}
+#wrap header nav ul {}
+#wrap header nav ul li {}
+#wrap header nav ul li a {}
+#wrap header .right_menu {}
+#wrap header .right_menu a {}
+#wrap header .right_menu ul {}
+#wrap header .right_menu ul li {}
+#wrap header .right_menu ul li a {}
+#wrap header .right_menu ul li a img {}
+#wrap main {}
+#wrap main .path {}
+#wrap main .path a {}
+#wrap main .path em {}
+#wrap main h1 {}
+#wrap main p {}
+#wrap main .bg {}
+#wrap main .bg .part_wrap_01 {}
+#wrap main .bg .part_wrap_01 p {}
+#wrap main .bg .part_wrap_01 p img {}
+#wrap main .bg .part_wrap_01 .part_1 {}
+#wrap main .bg .part_wrap_01 .part_1 .photo_01 {}
+#wrap main .bg .part_wrap_01 .part_1 .photo_01 img {}
+#wrap main .bg .part_wrap_01 .part_1 h2 {}
+#wrap main .bg .part_wrap_01 .part_1 p {}
+#wrap main .bg .part_wrap_02 {}
+#wrap main .bg .part_wrap_02 p {}
+#wrap main .bg .part_wrap_02 p img {}
+#wrap main .bg .part_wrap_02 .part_2 {}
+#wrap main .bg .part_wrap_02 .part_2 .photo_02 {}
+#wrap main .bg .part_wrap_02 .part_2 .photo_02 img {}
+#wrap main .bg .part_wrap_02 .part_2 h2 {}
+#wrap main .bg .part_wrap_02 .part_2 p {}
+
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>241127 css 복습</title>
+    <style>
+        #wrap {
+            background-color: lightgray;
+            padding: 20px 15px 0 0;
+
+        }
+        #wrap .contents {
+            background-color: pink;
+            text-align: right;  /* 원하는곳에 가장 근접한곳에 작성 */
+            padding-right: 20px;
+
+        }
+        #wrap .contents h1 {
+            text-align:center;
+            width: 200px; height: 200px;
+            background-color: purple; color: white;
+            border-radius: 50%;
+        }
+        #wrap .contents .menu {
+            background-color: yellow;
+            text-align:center;
+
+            
+        }
+        #wrap .contents .menu li {}
+        #wrap .contents .menu li:nth-child(1) {
+            border-bottom: 5px dashed red;
+        }
+        #wrap .contents .menu li:nth-child(2) {}
+        #wrap .contents p:nth-of-type(1) {     /*nth-child로 쓰면 형제중 (3)번째*/
+            display: inline-block;
+        }
+        #wrap .contents p:nth-of-type(2) {
+
+            padding : 20px;
+        } /*p요소중에 2번째*/
+        #wrap .contents p {
+            display: inline-block;
+            background-color: aqua;
+            padding : 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="contents">
+            <h1>제목</h1>
+            <ul class="menu">
+                <li>메뉴1</li>
+                <li>메뉴2</li>
+            </ul>
+            <p>보조메뉴1</p>
+            <p>보조메뉴2</p>
+        </div>
+    </div>
+</body>
+</html>
