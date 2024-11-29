@@ -42,6 +42,8 @@
 }
 #wrap main .path img {
     margin: 0 12px;
+    position: relative;
+    top:5px; 
 }
 #wrap main  h1 {
     font-weight: 700;
@@ -110,12 +112,15 @@
 #wrap main .bg .goal_contents li:nth-child(2) span {color: black;} /*형제한테 nth수열확인*/
 
 #wrap main .bg .strategy_contents {
+    background-color: yellow; 
+    width: max-content, margin:0 auto;
 }
+#wrap main .bg .strategy_contents ::after {clear:both; content: ''; display:block;}
 #wrap main .bg .strategy_contents dl {
     background-color: #eee;
-    display: inline-block;
     width: 180px;
     height: 180px;
+    float: left;
     border-radius: 50%;
     margin-left:-10px;
     /* padding-top: 47.5px; */

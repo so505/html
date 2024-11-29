@@ -1,23 +1,54 @@
 #wrap {}
 #wrap header {}
 #wrap main {}
-#wrap main .path {background-color: #f9f9f9;}
+#wrap main .path {
+    background-color: #f9f9f9;
+    text-align: right;
+    margin-bottom:158px;
+}
 #wrap main .path a {}
 #wrap main .path img {}
 #wrap main .path em {}
-#wrap main h1 {}
-#wrap main > p {}
-#wrap main .bg {background-color: #f9f9f9;}
+#wrap main h1 {
+    font-size: 3.13rem;
+    font-weight:700;
+    letter-spacing: -0.02rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+#wrap main > p {
+    font-size: 1.19rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 80px;
+
+}
+#wrap main .bg {
+    background-color: #f9f9f9;
+}
 #wrap main .bg .corporate {
     background-color: yellow;
     width: 1140px; margin:0 auto;
+    display: inline;
 }
 #wrap main .bg .corporate li {
     background-color: aqua;
     width: 250px; height: 250px;
     border: 1px solid #888;
+    background-repeat: no-repeat;
+    background-position: 80% 85%;
+    background-size: 100px auto;
+    background-image: url(../images/info/cr01.png);/*공통이미지*/
+    padding: 30px;
+    float:left ;
+    margin-right: 42.5px; /* 이미 기본마진이 조금 잡혀있다 합산해서 계산할것*/
 }
-#wrap main .bg .corporate li:nth-child(1) {
+#wrap main .bg .corporate li:nth-child(1) {}
+#wrap main .bg .corporate li:nth-child(2) {background-image: url(../images/info/cr02.png);}
+#wrap main .bg .corporate li:nth-child(3) {background-image: url(../images/info/cr03.png);}
+#wrap main .bg .corporate li:nth-child(4) {margin:0;} /*마진의 방향에 따라 많이 쓰는 속성*/
+
+/* /* #wrap main .bg .corporate li:nth-child(1) {
     background-image: url(../images/info/cr01.png);
     background-repeat:no-repeat ;
     background-position:80% 85%;
@@ -37,8 +68,11 @@
     background-position: 80% 85%;
 }
 #wrap main .bg .corporate li:nth-child(4) {
-    background:lime url(../images/info/cr01.png) no-repeat 80% 85%;
+    background:lime url(../images/info/cr01.png) no-repeat 80% 85%; */
+ */
+#wrap main .bg .corporate li h2 {
+    font-weight: 600;
+    font-size: 1.38rem;
 }
-#wrap main .bg .corporate li  h2 {}
 #wrap main .bg .corporate li  p {}
 #wrap footer {}

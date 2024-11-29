@@ -174,3 +174,11 @@ text-transform: 영문 대소문자 바꾸기
 ## img태그와 background-imge CSS속성 차이
 * im태그는 이미지만으로 구성된 인라인 태그로 크기를 입력하지 않아도 자동으로 원본크기를 유지하며 추가적으로 모든 scc입력이 가능하다. 예) width,height, padding, margin, border등등...
 *background-image 속성은 태그가 아닌 꾸미기 속성이기 때문에 img태그와 다르게 자동으로 원본크기가 나타나지 않으며 배경이미지가 들어간 요소의 크기 안에서만 나타난다. 또한 추가적인 Css속성을 주려면 background-로 시작하는 속성만 기능하고 그외 속성은 모두 불가능하다.
+---------------------
+# background 통합속성은 background적용 선택자가 1개일때 사용한다. (덮어씌울수있다)
+*` background:color url()  repeat position;`    
+ ## background 개별속성은 적용선택자가 2개 이상일때 (nth등 포함) 사용한다.
+ *`background=color`
+ *`background-image`
+ *`background-repeat`
+ *`background-position`
