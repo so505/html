@@ -2,7 +2,7 @@ body,html,h1,h2,h3,h4,h5,h6,
 p,div,dl,dt,dd,ul,ol,li,blockquote,a,address,
 span,em,img,strong,sub,sup,del,s,q,mark,code,
 header,nav,main,footer,article,section,aside {
-    line-height:1.0; font-size:16px; font-weight:normal; margin:0; padding:0; font-style:normal;box-sizing: border-box; 
+    line-height:1.0; font-size:1.0em; font-weight:normal; margin:0; padding:0; font-style:normal;box-sizing: border-box; 
     font-family: "No to Sans" "sans-serif";
     box-sizing:border-box;
 }

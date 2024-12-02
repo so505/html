@@ -1,15 +1,16 @@
-#wrap {
-    background-color: brown;
-}
+#wrap {}
 #wrap header {
     background-color: rgba(0,0,0,0,0.1);
     /* headr는 모든 사이트에서 높이 고정되는 경우가 90% 이상이다. */
     height:80px;
     padding:21px 80px;
+    position: fixed; left: 0; top: 0; z-index: 999;
+    width: 100%;
+
 }
 #wrap header::after {clear:both; display:block; content:'';}
 #wrap header h1 {
-    background-color: aqua; 
+
     float: left;
     padding-top: 3px;
     
@@ -17,9 +18,8 @@
 #wrap header h1 a {}
 #wrap header h1 a img {}
 #wrap header nav {
-    background-color: coral;
+
     float: right;
-    
 
 }
 #wrap header nav ul {overflow: hidden;}
@@ -45,41 +45,167 @@
     display: block;  /* a는 인라인이기도해서 모양이 망가진다 */
     border-radius: 25px; /* 픽셀로 적을것 */
 }
-#wrap main {background-color: lime;}
+#wrap main {}
 /* ===================================메인 ~1~4행 공통선택자 */
 #wrap main .containr {background-color: beige;}
 #wrap main .containr .contents {
-    background-color: hotpink;}
-#wrap main .containr .contents .txt {
-    background-color: aqua;
+    width:1440px; height:100vh;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.3); /*제거용*/
 }
-#wrap main .containr .contents .txt h1 {}
-#wrap main .containr .contents .txt h1 span {}
-#wrap main .containr .contents .txt p {}
+#wrap main .containr .contents .txt {
+    background-color: orange;
+}
+#wrap main .containr .contents .txt h1 {
+    font-weight: 700;
+    font-size: 4.38rem; line-height:1.3;
+    color:#fff
+}
+#wrap main .containr .contents .txt h1 span {
+    color:#5EE1FF;
+    font-weight: 700;
+    font-size: 4.38rem;
+
+
+}
+#wrap main .containr .contents .txt h1+p {
+    font-size:1.5rem;
+    font-weight:500;
+    line-height:1.5;
+    letter-spacing:-0.02em; color:#fff;
+    margin:20px 0;
+} /*h1에서 인접한 다음 P를 선택해라..* h1~p(h1뒤에 모든것잡아라)/
 /* ==================================메인 1행 결제 편리함 */
 #wrap main .pay {
-    background-image: url(../images/row1.jpg);
+    background-image: url(../images/row1.jpg);}
+#wrap main .pay .contents {position: relative;}
+#wrap main .pay .contents .txt {
+    padding-top: 231px;
+    background-size:cover;
+    
 }
-#wrap main .pay .contents {}
-#wrap main .pay .contents .txt {}
+
 #wrap main .pay .contents .txt h1 {}
-#wrap main .pay .contents .txt h1 span {}
+#wrap main .pay .contents .txt h1 span {
+
+}
 #wrap main .pay .contents .txt p {}
 #wrap main .pay .contents .txt .bnr_btn_wrap {
-    background-color: purple;
+    
 }
+#wrap main .pay .contents .txt .bnr_btn_wrap>*{margin-right: 10px;}
 #wrap main .pay .contents .txt .bnr_btn_wrap .prev {}
 #wrap main .pay .contents .txt .bnr_btn_wrap .prev img {}
-#wrap main .pay .contents .txt .bnr_btn_wrap .progress {}
+
+#wrap main .pay .contents .txt .bnr_btn_wrap .progress{
+    display: inline-block;
+    width: 100px; height: 2px;
+    background-color:rgba(255, 255, 255, 0.3);
+    position:relative; bottom: 12px;
+}
+#wrap main .pay .contents .txt .bnr_btn_wrap.progress:nth-child(4) {
+    background-color:rgba(255, 255, 255, 1);
+}
 #wrap main .pay .contents .txt .bnr_btn_wrap .pause {}
 #wrap main .pay .contents .txt .bnr_btn_wrap .pause img {}
 #wrap main .pay .contents .txt .bnr_btn_wrap .next {}
 #wrap main .pay .contents .txt .bnr_btn_wrap .next img {}
 #wrap main .pay .contents .scroll {
-    background-color: brown;
+    
+    position: absolute;
+    right: 0; bottom: 43px;
 }
-#wrap main .pay .contents .scroll span:nth-child(1) {}
-#wrap main .pay .contents .scroll .scroll_bg {}
-#wrap main .pay .contents .scroll .scroll_bg .bar {}
+#wrap main .pay .contents .scroll span:nth-child(1) {
+    text-transform:uppercase;  /*모두 대문자*/
+    font-size: 0.88rem; line-height:1.3; ; font-weight: 500;
+    color: #fff;
+    position: relative; top:6px;
+}
+#wrap main .pay .contents .scroll .scroll_bg {
+    display: inline-block;
+    width: 12px; height: 30px;
+    background-color: #555;
+    border-radius: 6px;  
+
+}
+#wrap main .pay .contents .scroll .scroll_bg .bar {
+    display: inline-block;
+    width: 8px; height: 8px;
+    background-color:#fff;
+    border-radius: 50%;
+    position:relative; left: 2px; top: -5px;
+}
+/* ===========================================2페이지 시작 */
+#wrap main .service { background-image: url(../images/row2.jpg);}
+#wrap main .service .contents {
+    overflow: hidden;
+    padding-top: 311px;
+}
+#wrap main .service .contents .txt {
+    background-color: aqua;
+    float: left;
+}
+#wrap main .service .contents .txt .sub_title {}
+#wrap main .service .contents .txt p {
+    font-size: 1.56rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+#wrap main .service .contents .txt h1 {}
+#wrap main .service .contents .payment {
+    float:right;
+}
+#wrap main .service .contents .payment .card_bg {
+    background-color: yellow;
+    display: inline-block;
+    position: relative; bottom:154px;
+    margin-right: 22px;
+}
+#wrap main .service .contents .payment .card_bg .card {
+    width: 331px;
+
+}
+#wrap main .service .contents .payment .card_bg .card h2 {margin-bottom: 35px;
+}
+#wrap main .service .contents .payment .card_bg .card p {
+
+}
+#wrap main .service .contents .payment .card_bg .card .read {
+    background-color: lime;
+    border-top: 1px solid black;
+    }
+#wrap main .service .contents .payment .card_bg .card .read p {
+    display: inline-block;
+    float: left;
+}
+#wrap main .service .contents .payment .card_bg .card .read p:nth-of-type(2) {
+    display: inline-block;
+    float: right;
+}
+#wrap main .service .contents .payment .card_bg .card .read p img {}
+#wrap main .service .contents .payment .account_bg {
+    background-color: coral;
+    display: inline-block;
+    
+}
+#wrap main .service .contents .payment .account_bg .account {
+    width: 331px;
+    
+}
+#wrap main .service .contents .payment .account_bg .account h2 {opacity:0.6;}
+#wrap main .service .contents .payment .account_bg .account p {}
+#wrap main .service .contents .payment .account_bg .account .read_02 {}
+#wrap main .service .contents .payment .account_bg .account .read_02 p {
+    display: inline-block;
+    float: left;
+}
+#wrap main .service .contents .payment .account_bg .account .read_02 p:nth-of-type(2) {
+    display: inline-block;
+    float: right;
+}
+#wrap main .service .contents .payment .account_bg .account .read_02  img {}
+
 
 
