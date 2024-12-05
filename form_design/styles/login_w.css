@@ -1,0 +1,66 @@
+.login_wrap {
+    width: 500px;
+    margin:0 auto;
+}
+.login_wrap h1 {
+    background-color: aqua;
+    font-size: 4.38rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 25px;
+}
+.login_wrap >p {
+    background-color: yellow;
+    font-size: 1.25rem;
+    letter-spacing: 0.02em;
+    margin-bottom: 57px;
+}
+.login_wrap #login_form {
+}
+.login_wrap #login_form fieldset{ margin-bottom: 62px;}
+.login_wrap #login_form fieldset legend {}
+.login_wrap #login_form fieldset dl {
+    background-color: lime;
+}
+.login_wrap #login_form fieldset dl dt{
+    font-size: 1.88rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.login_wrap #login_form fieldset dl dd{
+    border:1px solid #aaa ;
+    border-radius:10px;
+    margin-bottom: 38px;
+    padding: 15px;
+}
+.login_wrap #login_form fieldset dl dd input{}
+.login_wrap #login_form fieldset h2 {
+    font-size: 1.88rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.login_wrap #login_form fieldset .button_group {
+
+}
+.login_wrap #login_form fieldset .button_group .login_btn {
+    border:1px solid #aaa ;
+    border-radius:10px;
+    font-weight: 600;
+    display:block; width: 500px;
+    margin-bottom: 18px;
+    padding: 15px;
+    background-color: black;
+    color: #fff
+}
+.login_wrap #login_form fieldset .button_group .login_btn_2{
+    
+    background-color:#fff;
+}
+.login_wrap #login_form .sign_up {
+    background-color: hotpink;
+    color: #555;
+    text-align: center;
+}
+.login_wrap #login_form .sign_up a {
+    font-weight: 700;
+}
