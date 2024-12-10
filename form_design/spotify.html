@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN |  Spotify</title>
+    <link rel="shortcut icon" href="./images/spotify_logo.png" type="image/x-icon"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link href="./styles/reset.css" rel="stylesheet">
+    <link href="./styles/spotify.css" rel="stylesheet">
+    <style>
+        /* 속성선택자연습용(주로 in put에서 많이 사용) */
+        /* input[name*=user] {background-color: aqua;} (* user 포함한모든것)*/
+    </style>
+</head>
+<body>
+    <main>
+        <h1><a href="#"><img src="./images/logo.svg.svg" alt="spotify"></a></h1>
+        <div class="tab_menu">
+            <a href="#" class="active">SIGN IN</a> 
+            <a href="#">SIGN UP</a>
+        </div>
+        <div class="tab_wrap">
+            <!-- sign in 클릭시 출력내용 -->
+            <form action="#" method="post" id="inFrm">
+                <ul>
+                    <li><input type="text" name="user_name" placeholder="Username" required></li>
+                    <li><input type="password" name="user_pw" placeholder="Password" required></li>
+                </ul>
+                <div class="syay_in">
+                    <input type="checkbox" name="login_stay" value="stay_on" id="stay_on">
+                    <label for="stay_on">syay signed in</label>
+                </div>
+                <p class="btn"><button type="submit" class="sign_in_btn">SIGN IN</button></p>
+                <a href="#" class="forget_pw">Forget Password ?</a>
+            </form>
+            <!-- sign up 클릭시 출력내용 -->
+            <form action="#" method="post" id="upfrm">
+                <div class="use_wantname">
+                    <ul>
+                        <li><input type="text" name="use_name_2" placeholder="Please  ID you want to use" required</li>
+                        <li><button type="button" class="button_name">Check redundancy</button></li>
+                    </ul>
+                    <p class="name_guide">Please enter an ID of 4-12 characters by combining English lowercase letters and numbers</p>
+                </div>
+                <div class="pw_wrap">
+                    <ul>
+                        <li><input type="password"name="use_pw_2" placeholder="password"required</li>
+                        <li><input type="password" name="use_check_pW" placeholder="Check the password"></li>
+                    </ul>
+                    <p class="pw_guide">Please enter 8-20 characters by combining at least two of English uppercase letters, lowercase letters, numbers, and special characters</p>
+                </div>
+                <div class="emali_wrap">
+                    <ul>
+                        <li><input type="email" name="user_email" placeholder="E-mail" required></li>
+                        <li>@</li>
+                        <ii><select name="email_address"  > 
+                            <option value=""disabled selected>Choice</option>
+                            <option value="naver">naver.com</option>
+                            <option value="dume">dume.com</option>
+                            <option value="gmil">gmil.com</option>
+                            <option value="kakao">kakao.com</option>
+                            <option value="hanmail">hanamil.com</option>
+                            <option value="nate">nate.com</option>
+                            <option value="hot">hotmail.com</option>
+                        </select></ii>
+                    </ul>
+                    <p class="email_guide">Select to secure your account more safely, please sign up and proceed with e-mail authentication at [My Information > Modify Member Information</p>
+                </div>
+                <ul class="use_tel_number">
+                    <li><input type="tel" name="use_tel" placeholder="Phone number" required</li>
+                    <li><button type="button" class="button_check">Check number</button> </li>
+                </ul>
+                <p class="btn_signup"><button type="button" class="sign_up_btn">Sign up</button></p>
+            </form> 
+        </div>
+    </main>
+    
+</body>
+</html>
