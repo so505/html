@@ -1,0 +1,39 @@
+.book {
+    margin:100px auto 0;
+    border-radius: 20px;
+    overflow: hidden;
+    /* 자식이 올라와서 보더가 안보임.  overflow: hidden으로 가려줄것 */
+}  
+.book tr {background-color: #f2f2f2;}  
+.book tr:nth-child(1) {
+    background-color: #FF0066;
+}
+.book tr:first-child th {
+    color: #fff; text-align: center;
+    padding: 20px 0;
+    font-size: 1.13rem; font-weight: 700;
+}
+.book tr:nth-child(3) {
+    color: #FF0066;
+    border: 1px solid #FF0066;
+    background-color: #E8E8E8;
+}
+.book tr:nth-child(3) th, {}
+.book tr:nth-child(3) td {
+    color: #FF0066;
+}
+
+.book tr:nth-child(5) {
+    background-color: #E8E8E8;
+}
+
+.book tr th {width: 100px; font-weight: 500;}
+.book tr th:first-child {
+    width: 250px; 
+    padding-left: 16px;
+    font-weight: 500;
+}
+.book tr td {
+    width: 100px;
+    text-align:
+    center; font-weight: 500;padding: 16px;}

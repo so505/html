@@ -1,0 +1,36 @@
+
+.plan {margin: 0 auto;}
+.plan thead {
+    background-color: #FAFAFA;
+    border: 2px solid black;
+    border-left: 0; border-right: 0;
+}
+.plan thead tr th,
+.plan tbody tr th,
+.plan tbody tr td {text-align: center; padding: 20px 0;}
+.plan thead tr {border-top:1px dotted #AAAAAA;}
+.plan thead tr:first-child th:nth-child(2) {
+    border-top:1px dotted  #AAAAAA;padding: 30px 0;
+}
+.plan thead tr th {text-align: center;font-size: 1.13rem; font-weight: 600;}
+
+.plan thead tr:nth-child(2) {font-weight: 700; }
+.plan thead tr th img {width: 60px 67.5px; }
+.plan thead tr th h1 {width: 860px; font-size: 1.25rem; font-weight: 600;}
+.plan thead tr th p {color: #777777; margin-top:12px;} 
+.plan thead tr th h2+p {color: #777777; margin-top:12px;font-size: 0.88rem;}
+.plan thead tr th h2 {font-size: 1.13rem; font-weight: 600;}
+
+.plan tbody {}
+.plan tbody tr {
+    border-bottom: 1px solid #DDDDDD;
+}
+.plan tbody tr th {width: 250px; padding: 20px 0;text-align: center;}
+
+.plan tbody tr th,
+.plan tbody tr th {font-weight: 500;}
+
+.plan tbody tr td {width: 170px; font-weight: 500;}
+.plan tbody tr td:nth-of-type(1) {color: #EE239B;font-weight: 600; }
+.plan tbody tr td:nth-child(2) {width: 150px;}
+.plan tbody tr td:nth-child(3) {width: 350px;}
