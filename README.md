@@ -201,3 +201,6 @@ text-transform: 영문 대소문자 바꾸기
  * 블럭요소에 fixed 사용시 기본너비값 100%가 사라지고 inline-block처럼 내용만큼만 크기를 인식하기때문에 반드시 별도의 너비값을 입력해야한다. 디자인에 따라 너비값은 그때그때 다르지만 평균적으로 100%를 많이 사용한다.
 * fixed 사용시는 반드시x,y 좌표값과 z-index 중첩순서를 함께 적용해야한다.
 !--활성화=active--!
+
+**달력제거 가능** 복사해서 사용하기
+* input[name$=date]::-webkit-calendar-picker-indicator
