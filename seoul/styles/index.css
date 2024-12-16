@@ -1,0 +1,44 @@
+header {
+    width: 1152px; margin: 0 auto;
+}
+/* ====================================header top */
+header .top {
+    background-color: aqua;
+    height: 48px;
+    /* lnb+mylnb 정렬하기 위한 flex 적용부모 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+header .top .lnb {
+    background-color: lime;
+}
+header .top .lnb h1 {}
+header .top .lnb h1 a {}
+header .top .lnb h1 a img {}
+header .top .lnb > a {} /* 위a랑 중복되지않게*/
+header .top .my_lnb {background-color:yellow}
+header .top .my_lnb a {}
+/* ====================================header bottom */
+header .bottom {
+    background-color: lime;
+    height: 119px;
+}
+header .bottom h1 {}
+header .bottom h1 a {}
+header .bottom h1 a img {}
+header .bottom #searchFrm {
+    background-color: yellow;
+}
+header .bottom #searchFrm input[name*=search] {}
+header .bottom #searchFrm input::placeholder {}
+header .bottom #searchFrm #search_btn {}
+header .bottom #searchFrm #search_btn img {}
+header .bottom .lang {
+    background-color: coral;
+}
+header .bottom .lang select[name*=lang] {}
+header .bottom .lang select[name*=lang] option {}
+header .bottom .lang #lang_btn {}
+/* ====================================main */
+/* ====================================footer */

@@ -1,11 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>회원가입 | 오늘의 집</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <link href="./styles/reset.css" rel="stylesheet">
+    <link href="./styles/login.css" rel="stylesheet">
 </head>
 <body>
-    
+    <div id="wrap">
+        <header>
+            <h1><a href="#"><img src="./images/logo.png" alt="오늘의 집"></a></h1>
+        </header>
+        <main>
+            <div class="title">
+                <h1>회원가입</h1>
+                <P>SNS계정으로 간편하게 회원가입</P>
+                <div class="sns_login">
+                    <a href="#"><img src="./images/facebook.png" alt=""></a>
+                    <a href="#"><img src="././images/kakao.png" alt=""></a>
+                    <a href="#"><img src="./images/naver.png" alt=""></a>
+                </div>
+            </div>
+            <div class="container">
+                <form action="#" method="post" id="signupFrm">
+                    <div class="emali_wrap">
+                        <h2>이메일</h2>
+                        <ul>
+                            <li><input type="email" name="u_email" placeholder="이메일" required></li>
+                            <li>@</li>
+                            <li><select name="user_email">
+                                <option value="disabled selected">선택해주세요</option>
+                                <option value="naver">naver.com</option>
+                                <option value="hanamil">hanamil.com</option>
+                                <option value="daum">dume.com</option>
+                                <option value="gmail">gmil.com</option>
+                                <option value="nate">nate.com</option>
+                                <option value="hotmail">hotmail.com</option>
+                                <option value="outlook">outlook.com</option>
+                                <option value="icloud">icloud.com</option>
+                                <option value="direct">직접입력</option>
+                            </select>
+                            <img src="./images/arrow_drop_down.png" alt=""></li>
+                        </ul>
+                            <p><button type="button" class="mail_btn style_btn">이메일 인증하기</button></p> 
+                    </div>
+                    <dl>
+                        <dt class="titles">비밀번호</dt>
+                        <dd><span>영문,숫자를 포함한 8자 이상의 비밀번호를 입력해주세요</span></dd>
+                        <dd><input type="password" name="user_pw" placeholder="비밀번호" required></dd>
+                        <dt>비밀번호확인</dt>
+                        <dd><input type="password" name="user_pw_check" placeholder="비밀번호" required></dd>
+                        <dt class="titles">닉네임</dt>
+                        <dd><span>다른 유저와 겹치지 않도록 입력해주세요(2-20자)</span></dd>
+                        <dd><input type="text" name="user_pw" placeholder="별명(2~20자)" required maxlength="20"></dd>
+                        <div class="consent_wrap">
+                            <dt class="titles">약관동의</dt>
+                            <dd>
+                                <input type="checkbox" name="consent_all" value="checkbox_on" id="user_consent_all">
+                                <label for="user_consent_all"><span>전체동의</span><em> 선택항목에 대한 동의포함</em></label>
+                            </dd>
+                            <dd>
+                                <input type="checkbox" name="consent_age" value="checkbox_on" id="user_consent_age" required>
+                                <label for="user_consent_age">만 14세 이상입니다<em>(필수)</em></label>
+                            </dd>
+                            <dd>
+                                <input type="checkbox" name="consent_low" value="checkbox_on" id="consent_low" required>
+                                <label for="consent_low">이용약관<em>(필수)</em></label>
+                                <a href="#"><img src="./images/arrow_forward_ios.png" alt="이용약관보기"></a>
+                            </dd>
+                            <dd>
+                                <input type="checkbox" name="consent_collect" value="checkbox_on" id="consent_collect" required>
+                                <label for="consent_collect">개인정보수집 및 이용동의<em>(필수)</em></label>
+                                <a href="#"><img src="./images/arrow_forward_ios.png" alt="개인정보수집서 보기"></a>
+                            </dd>
+                            <dd>
+                                <input type="checkbox" name="consent_marketing" value="checkbox_on" id="consent_marketing">
+                                <label for="consent_marketing">개인정보 마케팅 활용 동의<em>(선택)</em></label>
+                                <a href="#"><img src="./images/arrow_forward_ios.png" alt="마케팅활용동의서 보기"></a>
+                            </dd>
+                            <dd>
+                                <input type="checkbox" name="consent_notification" value="checkbox_on" id="consent_notification">
+                                <label for="consent_notification">이벤트,쿠폰,특가 알림 메일 및 SMS등수신<em>(선택)</em></label>
+                            </dd>
+                        </div>
+                    </dl> 
+                    <p class="sign_up_btn"><button type="button" class="signup_btn style_btn">회원가입하기</button></p>
+                    <p>이미 아이디가 있으신가요?<a href="#">로그인</a></p>
+                </form>
+            </div>
+        </main>
+    </div>
 </body>
 </html>

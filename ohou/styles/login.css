@@ -1,0 +1,110 @@
+#wrap {}
+#wrap header {
+    width: 1024px;
+    height: 88px;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-top: 21px;
+}
+#wrap header h1 { float: left;}
+#wrap header h1 a{}
+#wrap header h1 a img {}
+/* ============================================= */
+#wrap main {
+    width: 360px;
+    margin: 0 auto;
+    padding-bottom: 63px;
+}
+#wrap main .title { padding-bottom: 30px;}
+#wrap main .title h1 {text-align: left; margin-bottom: 14px;font-size: 1.25rem;font-weight: 600; letter-spacing: -0.02em;}
+#wrap main .title p {text-align:center; margin-bottom: 14px; font-size: 0.88rem; color: #777; letter-spacing: -0.02em;}
+#wrap main .title .sns_login {text-align:center; }
+#wrap main .title .sns_login a {}
+#wrap main .title .sns_login a:nth-child(2) {margin: 0 20px;}
+/* ==================================================입력양식 시작========== */
+#wrap main .container {}
+#wrap main .container #signupFrm  {}
+/* ==============================================공통디자인============================== */
+#wrap main .container #signupFrm  dl {}
+#wrap main .container #signupFrm  dl dt,
+#wrap main .container #signupFrm .emali_wrap h2 {
+    margin: 12px 0 10px; font-size: 1.06rem; font-weight: 500; letter-spacing: -0.02em;
+}
+#wrap main .container #signupFrm  dl dd {width: 100%; margin-bottom: 10px;}
+#wrap main .container #signupFrm  dl dd span {
+    font-size: 0.88em;color: #777;letter-spacing: -0.02em;}
+#wrap main .container #signupFrm  dl dd input {}
+#wrap main .container #signupFrm  dl dd input[name^=user],
+#wrap main .container #signupFrm  p .style_btn,
+#wrap main .container #signupFrm .emali_wrap ul li input,
+#wrap main .container #signupFrm .emali_wrap ul li select {
+    border:1px solid #ddd; border-radius: 3px;
+    padding: 10px; letter-spacing: -0.02em; color: #bbb; width: 100%;
+}
+#wrap main .container #signupFrm  dl dd input[name^=user]::placeholder {color: #bbb}
+#wrap main .container #signupFrm .emali_wrap p .style_btn,
+#wrap main .container #signupFrm  p .style_btn {}
+/* =============================================이메일 입력양식 개별============================= */
+#wrap main .container #signupFrm .emali_wrap {}
+#wrap main .container #signupFrm .emali_wrap h2 {}
+#wrap main .container #signupFrm .emali_wrap ul {}
+#wrap main .container #signupFrm .emali_wrap ul li {display: inline-block;}
+#wrap main .container #signupFrm .emali_wrap ul li input {width:170px;}
+#wrap main .container #signupFrm .emali_wrap ul li select {padding: 11px; width:132px;color: #000;}
+#wrap main .container #signupFrm .emali_wrap ul li img {}
+#wrap main .container #signupFrm .emali_wrap p {background-color: #f5f5f5; font-weight: 600; color: #777; margin-top: 10px;}
+/* ===============================약관========================================================= */
+#wrap main .container #signupFrm  dl .consent_wrap {border: 1px solid #ddd;border-radius: 3px;padding: 10px;}
+#wrap main .container #signupFrm  dl .consent_wrap dt {margin-bottom: 20px; font-weight: 500; font-size: 1.06rem;}
+#wrap main .container #signupFrm  dl .consent_wrap dd {padding:4px ;}
+#wrap main .container #signupFrm  dl .consent_wrap dd #use_consent_all {}
+#wrap main .container #signupFrm  dl .consent_wrap dd #use_consent_all label {}
+/* ================================동의 체크박스====================================================== */
+#wrap main .container #signupFrm  dl .consent_wrap dd label {
+    background-image: url(../images/check_box_n.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 24px;
+    padding-left: 24px;
+    margin-bottom: 10px;
+}
+#wrap main .container #signupFrm  dl .consent_wrap dd input[value*=checkbox] {}
+#wrap main .container #signupFrm  dl .consent_wrap dd input[value*=checkbox]:checked+label
+{background-image: url(../images/check_box_y.png);}
+/* ==================================================================================================== */
+#wrap main .container #signupFrm  dl .consent_wrap dd label {font-size: 0.81em;}
+#wrap main .container #signupFrm  dl .consent_wrap dd label span {font-weight: 600;font-size: 1rem; color: #000;}
+#wrap main .container #signupFrm  dl .consent_wrap dd label em {font-size: 0.81em; color: #3292FF;}
+#wrap main .container #signupFrm  dl .consent_wrap dd:nth-of-type(1) {border-bottom: 1px solid #eee;}
+#wrap main .container #signupFrm  dl .consent_wrap dd:nth-of-type(1) em {color:#777;font-size: 0.88rem;}
+#wrap main .container #signupFrm  dl .consent_wrap dd:nth-of-type(5) em {color:#777;}
+#wrap main .container #signupFrm  dl .consent_wrap dd:nth-of-type(6) em {color:#777;}
+#wrap main .container #signupFrm  dl .consent_wrap dd a {float: right;}
+#wrap main .container #signupFrm  dl .consent_wrap dd #use_consent_all label em {}
+#wrap main .container #signupFrm  dl .consent_wrap dd #use_consent_age {}
+#wrap main .container #signupFrm  dl .consent_wrap dd #use_consent_age label {}
+#wrap main .container #signupFrm  dl .consent_wrap dd #use_consent_age label em {}
+#wrap main .container #signupFrm  dl .consent_wrap dd #consent_low {}
+#wrap main .container #signupFrm  dl .consent_wrap dd #consent_low label {}
+#wrap main .container #signupFrm  dl .consent_wrap dd #consent_low label em {}
+#wrap main .container #signupFrm  dl .consent_wrap dd #consent_low a {}
+#wrap main .container #signupFrm  dl .consent_wrap dd #consent_low a img {}
+#wrap main .container #signupFrm  dl .consent_wrap dd #consent_collect {}
+#wrap main .container #signupFrm  dl .consent_wrap dd #consent_collect label {}
+#wrap main .container #signupFrm  dl .consent_wrap dd #consent_collect label em {}
+#wrap main .container #signupFrm  dl .consent_wrap dd #consent_marketing {}
+#wrap main .container #signupFrm  dl .consent_wrap dd #consent_marketing label {}
+#wrap main .container #signupFrm  dl .consent_wrap dd #consent_marketing label em {}
+#wrap main .container #signupFrm  dl .consent_wrap dd #consent_marketing a {}
+#wrap main .container #signupFrm  dl .consent_wrap dd #consent_marketing a img {}
+#wrap main .container #signupFrm  dl .consent_wrap dd #consent_notification {}
+#wrap main .container #signupFrm  dl .consent_wrap dd #consent_notification label {}
+#wrap main .container #signupFrm  dl .consent_wrap dd #consent_notification label em {}
+#wrap main .container #signupFrm  dl .consent_wrap dd #consent_notification a {}
+#wrap main .container #signupFrm  dl .consent_wrap dd #consent_notification a img {}
+#wrap main .container #signupFrm  p .signup_btn { background-color: #3292FF; color:#fff; padding: 15px;}
+#wrap main .container #signupFrm p {text-align: center; font-size: 0.88rem; letter-spacing: -0.02em;
+margin-top: 20px;}
+#wrap main .container #signupFrm p a {font-size: 0.88rem;font-weight: 600; letter-spacing: -0.02em; 
+    text-decoration-line: underline;}
+
