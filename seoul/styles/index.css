@@ -3,42 +3,166 @@ header {
 }
 /* ====================================header top */
 header .top {
-    background-color: aqua;
     height: 48px;
     /* lnb+mylnb 정렬하기 위한 flex 적용부모 */
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: center;
 }
 header .top .lnb {
-    background-color: lime;
+    /* 서울특별시 h1~응답소 a자식을 정렬하기 위한 flex적용부모 */
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
 }
 header .top .lnb h1 {}
 header .top .lnb h1 a {}
 header .top .lnb h1 a img {}
-header .top .lnb > a {} /* 위a랑 중복되지않게*/
-header .top .my_lnb {background-color:yellow}
-header .top .my_lnb a {}
+header .top .lnb > a {margin-left: 20px; letter-spacing: -0.02em;} /* 위a랑 중복되지않게*/
+header .top .my_lnb {
+
+}
+header .top .my_lnb a {margin-right: 20px;letter-spacing: -0.02em;}
+header .top .my_lnb a:last-child {margin:0;}
 /* ====================================header bottom */
 header .bottom {
-    background-color: lime;
+
     height: 119px;
+    /* 로고h1~언어div 자식을 묶는 flex적용부모 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 header .bottom h1 {}
 header .bottom h1 a {}
 header .bottom h1 a img {}
 header .bottom #searchFrm {
-    background-color: yellow;
+    width: 369px; height: 46px;
+    padding: 0 20px;
+    border: 2px solid #1E6CB3;
+    /* input+button 정렬을위한 flex부모 */
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center
 }
-header .bottom #searchFrm input[name*=search] {}
-header .bottom #searchFrm input::placeholder {}
+header .bottom #searchFrm input[name*=search] {padding: ;}
+header .bottom #searchFrm input::placeholder {color: #1E6CB3; letter-spacing: -0.02em;}
 header .bottom #searchFrm #search_btn {}
 header .bottom #searchFrm #search_btn img {}
 header .bottom .lang {
-    background-color: coral;
+    
+} 
+header .bottom .lang select[name*=lang] {
+    border: 1px solid #1E6CB3; 
+    width: 93px; height: 29px;
+    margin-right: 2px;
+    padding: 5px 10px; 
+    font-size: 0.81em;
 }
-header .bottom .lang select[name*=lang] {}
 header .bottom .lang select[name*=lang] option {}
-header .bottom .lang #lang_btn {}
+header .bottom .lang .lang_btn {
+    background-color: #1E6CB3; color: #fff;
+    width: 30px; height: 29px;  font-size: 0.81em;
+}
 /* ====================================main */
+main {background-color: hotpink;}
+/* ====================================main 1. 상단 이벤트+공지사항 배너 */
+main .visual_container {
+    width: 1152px; margin: 0 auto;
+    /* 좌(거리두기) 우(현황,교통) 자식정렬 부모 flex 대상 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+} 
+main .visual_container .corona_notice {
+    position: relative;
+} 
+main .visual_container .corona_notice img {} 
+main .visual_container .corona_notice .close {
+    background-color: #1E6CB3; color: #fff;
+    width: 62px; height: 32px;
+    position: absolute; right: 10px; bottom: 10px;
+    display: block; border-radius: 5px; padding:5px 10px;
+} 
+main .visual_container .right_container {
+    width: 360px;
+} 
+main .visual_container .right_container .corona {
+    position: relative; 
+} 
+main .visual_container .right_container .corona img {} 
+main .visual_container .right_container .corona span {position: absolute; display: block;
+color: #fff;} 
+main .visual_container .right_container .corona .date {}
+main .visual_container .right_container .corona .date:nth-of-type(1) {width: 160px; right: 20px; top:11px}
+main .visual_container .right_container .corona .data {} 
+main .visual_container .right_container .corona .data1, 
+main .visual_container .right_container .corona .data2 { width:140px; text-align: center;}
+main .visual_container .right_container .corona .data1 { left: 30px; top: 80px;} 
+main .visual_container .right_container .corona .data2 { right: 30px; top: 80px;}
+main .visual_container .right_container .corona .data3, 
+main .visual_container .right_container .corona .data4 {width: 94px;text-align: center;} 
+main .visual_container .right_container .corona .data3 { left: 30px; bottom: 52px;}
+main .visual_container .right_container .corona .data4 { right: 121px; bottom: 52px;}
+main .visual_container .right_container .corona .data5 {
+    width: 59px;text-align: center;
+    right: 33px; bottom: 52px;
+} 
+main .visual_container .right_container .traffic {margin-top: 10px;} 
+main .visual_container .right_container .traffic a {} 
+main .visual_container .right_container .traffic a img {} 
+/* ======================================================main 2~5 공통 제목디자인 */
+main > * .title {}
+main > * .title h1 {}
+main > * .title .more_view {}
+
+/* ======================================================main 2. 주요서비스 */
+main .service_container {}
+main .service_container .title {
+    background-color: lime;
+}
+main .service_container .title h1 {}
+main .service_container .title .more_view {}
+main .service_container .contents {
+    background-color: aqua;
+    width: 1152px; margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+main .service_container .contents a {
+    display: flex; flex-flow: column nowrap;
+
+    
+}
+main .service_container .contents a em {}
+main .service_container .contents a span {
+    background-color: yellow;
+    width: 60px; height: 60px;
+    background-image: url(../images/service\ .png);
+}
+main .service_container .contents a:nth-child(1) span {}
+main .service_container .contents a:nth-child(2) span {background-position-x: -60px;}
+main .service_container .contents a:nth-child(3) span {background-position-x: -120px;}
+main .service_container .contents a:nth-child(4) span {background-position-x: -180px;}
+main .service_container .contents a:nth-child(5) span {background-position-x: -240px;}
+main .service_container .contents a:nth-child(6) span {background-position-x: -300px;}
+main .service_container .contents a:nth-child(7) span {background-position-x: -360px;}
+main .service_container .contents a:nth-child(8) span {background-position-x: -420px;}
+main .service_container .contents a:nth-child(9) span {background-position-x: -480px;}
+main .service_container .contents a:nth-child(10) span {background-position-x: -540px;}
+main .service_container .contents a:nth-child(11) span {background-position-x: -600px;}
+
+/* ======================================================main 3. 신청,행사,서비스 */
+/* ======================================================main 3-1 이벤트신청 */
+/* ======================================================main 3-2 이달행사축제 */
+/* ======================================================main 3-3 자주찾은서비스 */
+/* ======================================================main 4. 분야정보 */
+/* ======================================================main 5. 새소식 */
 /* ====================================footer */
