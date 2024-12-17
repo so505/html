@@ -204,3 +204,8 @@ text-transform: 영문 대소문자 바꾸기
 
 **달력제거 가능** 복사해서 사용하기
 * input[name$=date]::-webkit-calendar-picker-indicator
+
+    /* 자동줄바꿈 및 말줄임 처리 */
+     white-space: nowrap; width: calc(100% - 40px);
+    overflow: hidden;  /* a안에서만 보이고 밖은 보이지말아라 (꼭 너비가 셋트) */
+    text-overflow: ellipsis;  /* 오버플루어 된부분을 말줄임으로 나타나겠다 */
