@@ -3,6 +3,7 @@
     /* =========================공통선택자+1행반응형 디자인(tablet) */
     #wrap .container > * {padding: 0 80px;}
     #wrap .container .main_title {font-size: 3.13rem;}
+    #wrap .container h2 {font-size:2.50rem}
     #wrap .container .sponsor_btn {
         font-size: 1.38rem;
         width: 270px; padding: 15px 0;
@@ -21,8 +22,13 @@
      /* =========================3행반응형 디자인(tablet) */
     #wrap .container .contents h2 {}
      /* =========================4행반응형 디자인(tablet) */
-     /* =========================5행반응형 디자인(tablet) */
      /* =========================6행반응형 디자인(tablet) */
+    #wrap .bg4 .contents h2,
+    #wrap .bg6 .contents h2 {font-size: 2.50rem}
+    #wrap .bg4 .contents h2+p,
+    #wrap .bg6 .contents h2+p {font-size: 1.38rem; margin: 40px 0;}
+
+     /* =========================5행반응형 디자인(tablet) */
      /* =========================7행반응형 디자인(tablet) */
      /* =========================8행반응형 디자인(tablet) */
      /* =========================9행반응형 디자인(tablet) */
@@ -31,11 +37,14 @@
 
 @media screen and (max-width:900px) {
     #wrap .bg2 .contents {flex-flow: column nowrap;align-items: center;}
+    #wrap .bg4,
+    #wrap .bg6 {padding: 70px 0;}
 } /* ===========2행 반응형 디자인 769~900 end  */
 
   /* =========================공통 1행 반응형 디자인(mobile) */
 @media screen and (max-width:768px) {
     #wrap .container > * {padding: 0 15px;}
+    #wrap .container h2 {font-size:1.25rem;}
     #wrap .bg1 .gradient .contents h1:nth-child(1) {width: 40px;}
     #wrap .container .main_title {font-size: 1.88rem;}
     #wrap .bg1 .gradient .contents > * {margin-bottom: 50px;}
@@ -50,9 +59,15 @@
     #wrap .bg2 .contents .quiz_contents form label input[name^=quiz]+span {font-size: 1rem;}
     #wrap .bg2 .contents .quiz_status span {font-size: 1rem; text-align: center;}
     /* =========================3행 반응형 디자인(mobile) */
+    #wrap .bg3 {padding: 50px 0;}
+    #wrap .bg3 .contents iframe {height: 300px;}
     /* =========================4행 반응형 디자인(mobile) */
-    /* =========================5행 반응형 디자인(mobile) */
     /* =========================6행 반응형 디자인(mobile) */
+    #wrap .bg4 .contents h2,
+    #wrap .bg6 .contents h2 {font-size: 1.38rem; font-weight: 500;}
+    #wrap .bg4 .contents h2+p,
+    #wrap .bg6 .contents h2+p {font-size: 0.81rem; margin: 20px 0; font-weight: 400;}
+    /* =========================5행 반응형 디자인(mobile) */
     /* =========================7행 반응형 디자인(mobile) */
     /* =========================8행 반응형 디자인(mobile) */
     /* =========================9행 반응형 디자인(mobile) */
