@@ -1,0 +1,216 @@
+#wrap {width: 1920px; margin: 0 auto;}
+#wrap header {
+    width: 1920px; margin: 0 auto;
+    display: flex; flex-flow: row nowrap; justify-content: space-between; 
+    padding: 32px 80px;
+    z-index: 20; position: absolute; top: 0;
+}
+#wrap header h1 {}
+#wrap header h1 a {}
+#wrap header nav {}
+#wrap header nav ul {
+    display: flex;flex-flow: row nowrap; justify-content: space-around; margin-top: 16px;
+}
+#wrap header nav ul li {margin-right: 30px;}
+#wrap header nav ul li:nth-child(5) {margin-right: 0;}
+#wrap header nav ul li a {color: #FFFAEC;font-size:1.25rem; line-height:1.5; letter-spacing:-0.02em; font-weight:600;}
+/* =================================메인 시작======= */
+#wrap main {
+    position: relative;
+    width: 1920px; margin: 0 auto; 
+    background:#F6E7C2;
+    z-index: 5;
+}
+#wrap main .main_intro {
+    background-image: url(../images/top_bg.jpg);
+    background-size: cover;
+    width: 100%; height:898px ;
+    display: flex; flex-flow: column nowrap; justify-content:center; align-items: center;
+}
+#wrap main .main_intro p {font-size:1.56rem;font-weight:600;line: height 1.5; letter-spacing:-0.02em;color: #FFFAEC;}
+#wrap main .main_intro h1 {font-size:3.13rem; line-height:1.5; letter-spacing:-0.02em; color:#FFFAEC ;font-weight: 700; margin-top: 16px;}
+
+/* =============================2페이지 welcome ====*/
+#wrap main .bg_2 { height: 724px;
+    background-color: #FBF6E9;} 
+#wrap main .welcome_wrap { width: 1260px; margin: 0 auto;
+    width: 1260px; margin: 0 auto;height:814px;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;  align-items: center;
+}
+#wrap main .welcome_wrap .left_poto {position:relative;}
+#wrap main .welcome_wrap .left_poto img:nth-of-type(1) {width: 696px;}
+#wrap main .welcome_wrap .left_poto img:nth-of-type(2) {
+    position: absolute; left: 281px; top: 246px; width: 502px;
+    border: 15px solid #FBF6E9; border-radius: 20px;
+}
+#wrap main .welcome_wrap .right_text {text-align: right; width: 413px;}
+#wrap main .welcome_wrap .right_text h2 {
+    margin-bottom: 92px;font-size:2rem; line-height:1.5; letter-spacing:-0.02em; font-weight:700;
+    color: #4B5413;
+}
+#wrap main .welcome_wrap .right_text p {
+    font-size:1.25rem; line-height:1.5; letter-spacing:-0.02em; font-weight:500;color: #262B08;
+}
+/* =============================3페이지 객실 넘기기 버튼 ====*/
+#wrap main .rooms_information {width: 1260px; margin: 0 auto;}
+#wrap main .rooms_information h2 {
+    text-align:left; margin-top: 200px;
+    font-size:1.56rem; line-height:1.5; letter-spacing: 0.05em; font-weight:700;
+    color: #4B5413; 
+}
+#wrap main .rooms_information .next_btn {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; 
+}
+#wrap main .rooms_information .next_btn a {}
+#wrap main .rooms_information .next_btn a:nth-child(1) {position: relative;top:208px; left: -50px;}
+#wrap main .rooms_information .next_btn a:nth-child(2) {position: relative;top:208px; right: -50px;}
+#wrap main .rooms_information .next_btn a img {}
+#wrap main .rooms_information .rooms {}
+/* =============================객실 공통 ==================*/
+#wrap main .rooms_information .rooms {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    margin-bottom: 170px;
+}
+#wrap main .rooms_information .rooms .room_list {text-align: center;}
+#wrap main .rooms_information .rooms .room_list img {}
+#wrap main .rooms_information .rooms .room_list h3 {
+    font-size:1.56rem; line-height:1.5; letter-spacing: 0.05em; font-weight:700;
+    color: #000; margin: 7px 0 12px;
+}
+#wrap main .rooms_information .rooms .room_list .room_info {
+    border-radius: 20px; padding: 20.5px 50px;
+    background-color: rgba(251, 246, 233, 0.7);
+    margin: 0 42px;
+}
+#wrap main .rooms_information .rooms .room_list .room_info ul {}
+#wrap main .rooms_information .rooms .room_list .room_info ul {}
+#wrap main .rooms_information .rooms .room_list .room_info ul li {
+    line-height:1.5; letter-spacing:-0.02em; color: #000;
+}
+#wrap main .rooms_information .rooms .room_list .room_info dl {}
+#wrap main .rooms_information .rooms .room_list .room_info dl dt {
+    margin: 16px 0 10px;
+    text-decoration: underline;
+    font-size:1.06rem; line-height:1.5; letter-spacing:-0.02em; color: #000;
+}
+#wrap main .rooms_information .rooms .room_list .room_info dl dd {
+    line-height:1.5; letter-spacing:-0.02em; color: #000;
+}
+/* =============================객실 개별=============== */
+#wrap main .rooms_information .rooms .for {}
+#wrap main .rooms_information .rooms .for img {}
+#wrap main .rooms_information .rooms .for h3 {}
+#wrap main .rooms_information .rooms .for .room_info {}
+#wrap main .rooms_information .rooms .for .room_info ul li {}
+#wrap main .rooms_information .rooms .for .room_info dl dt {}
+#wrap main .rooms_information .rooms .for_.room_info dl dd {}
+#wrap main .rooms_information .rooms .bene {}
+#wrap main .rooms_information .rooms .bene img {}
+#wrap main .rooms_information .rooms .bene h3 {}
+#wrap main .rooms_information .rooms .bene .room_info {}
+#wrap main .rooms_information .rooms .bene .room_info ul {}
+#wrap main .rooms_information .rooms .bene .room_info ul li {}
+#wrap main .rooms_information .rooms .bene .room_info ul li:first-child {font-weight: 500;}
+#wrap main .rooms_information .rooms .bene .room_info dl dt {}
+#wrap main .rooms_information .rooms .bene_.room_info dl dd {}
+#wrap main .rooms_information .rooms .bell {}
+#wrap main .rooms_information .rooms .bell img {}
+#wrap main .rooms_information .rooms .bell h3 {}
+#wrap main .rooms_information .rooms .bell .room_info {}
+#wrap main .rooms_information .rooms .bell .room_info ul {}
+#wrap main .rooms_information .rooms .bell .room_info ul li {}
+#wrap main .rooms_information .rooms .bell .room_info dl dt {}
+#wrap main .rooms_information .rooms .bell_.room_info dl dd {}
+/* =============================관광지 공통 =================*/
+#wrap main h2 {
+    text-align:left; width: 1260px; margin: 0 auto;
+    font-size:1.56rem; line-height:1.5; letter-spacing: 0.05em; font-weight:700;
+    color: #4B5413;
+}
+#wrap main .tourist_wrap {
+    width: 1260px; margin: 22px auto; display: flex; flex-flow: row nowrap;
+}
+#wrap main .tourist_wrap .tourist {width: calc((100% - 10px) / 3); height: 416px; position: relative;}
+#wrap main .tourist_wrap .tourist:nth-of-type(2) {margin: 0 5px;}
+#wrap main .tourist_wrap .tourist:nth-of-type(3) {}
+#wrap main .tourist_wrap .tourist .text_content {
+    width: 256px; 
+    position:absolute; bottom: 22px;left:81px;
+    text-align: center; background-color: rgba(232, 231, 228, 0.7);
+    line-height: 150%; letter-spacing: -0.02rem;
+    border-radius: 10px; padding: 13px 0;
+}
+#wrap main .tourist_wrap .tourist .text_content h4 {
+    margin-bottom: 11px;
+    font-size:1.13rem; line-height:1.5; letter-spacing: -0.03em; font-weight:500; 
+}
+#wrap main .tourist_wrap .tourist .text_content p {line-height:1.5; letter-spacing:-0.02em;}
+/* ===============================관광지 개별============= */
+#wrap main .tourist_wrap .missionary_hous {background-image: url(../images/spot1.jpg);background-size: cover; background-position: center;}
+#wrap main .tourist_wrap .missionary_hous .text_content {}
+#wrap main .tourist_wrap .tiger_tree_hill {background-image:url(../images/spot2.jpg);background-size: cover;background-position: center; }
+#wrap main .tourist_wrap .tiger_tree_hill .text_content {}
+#wrap main .tourist_wrap .tiger_tree_hill img p {}
+#wrap main .tourist_wrap .movement_statue_3_1 {background-image: url(../images/spot3.jpg);background-size: cover;background-position: center;}
+#wrap main .tourist_wrap .movement_statue_3_1 h4 {}
+#wrap main .tourist_wrap .movement_statue_3_1 p {}
+/* ================================찾아오는 길================ */
+#wrap main .contact_map {
+    margin: 162px auto 71px; text-align: center;
+}
+#wrap main .contact_map h2 {
+    width: 10%;
+    border-bottom: 3px solid #4B5413;
+    text-align: center; margin-bottom: 30px;
+    font-size:1.56rem; line-height:1.5; letter-spacing: 0.05em; font-weight:700; 
+    color:#262B08;
+}
+#wrap main .contact_map a {}
+#wrap main .contact_map a img {}
+#wrap main .contact_wrap {
+    display: inline-block;
+    width: 674px; margin: 0 auto;
+    display: flex; flex-flow: row nowrap; align-items: center;
+    }
+#wrap main .contact_wrap .contact_info {
+    margin-right: 20px; float: left;
+    display: flex; flex-flow: row nowrap; align-items: center;
+}
+#wrap main .contact_wrap .contact_info img {width: 40px; height: 40px;}
+#wrap main .contact_wrap .contact_info dl { 
+    width: 327px; margin-left: 15px;
+}
+#wrap main .contact_wrap .contact_info dl dt {
+    text-align: left; 
+    font-size:1.56rem; letter-spacing: -0.03em; font-weight:500;
+    color: #262B08;
+}
+#wrap main .contact_wrap .contact_info dl dd {text-align: left; line-height:1.5; letter-spacing:-0.03em;}
+#wrap main .contact_wrap .contact_info_2 {float: right;}
+#wrap main .contact_wrap .contact_info_2 dl {display: flex; flex-flow: column nowrap;
+    text-align: left; }
+#wrap main .contact_wrap .contact_info_2 dl dt {margin-top: 50px;font-size:1.56rem; letter-spacing: -0.03em; font-weight:500;color: #262B08;}
+#wrap main .contact_wrap .contact_info_2 dl dd {line-height:1.5; letter-spacing:-0.03em;}
+/* =====================================푸터 라인=============== */
+#wrap footer { background-color: #F6E7C2; padding: 100px 0 73px;}
+#wrap footer .footer_line {
+    width: 1920; margin: 0 auto;
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+}
+#wrap footer .footer_line .line {display: inline-block; width: 703px; height: 2px; background-color: #4B5413}
+#wrap footer .footer_line h2 {color: #4B5413; font-size: 2.50rem; font-weight: 700; letter-spacing: 0.05em; line-height: 1.5;}
+/* =======================================푸터 내용================= */
+#wrap footer .footer_info {
+    width: 1260px; margin: 52px auto;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+#wrap footer .footer_info .left_footer {
+    clear: #31322F;
+    font-size:0.88rem; line-height:1.5; letter-spacing:-0.03em; font-weight:500;
+}
+#wrap footer .footer_info .left_footer p {line-height:1.5;}
+#wrap footer .footer_info .left_footer address {line-height:1.5;}
+#wrap footer .footer_info .right_footer{}
+#wrap footer .footer_info .right_footer a {display: block; text-align: right;
+    font-size:0.88rem; line-height:1.5; letter-spacing:-0.03em; font-weight:500;
+}
