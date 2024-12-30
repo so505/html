@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메포연습용</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        main {}
+        main .slide_wrap { 
+            background-color: aqua; height: 650px;
+            position: relative;
+            
+        }
+        main .slide_wrap .slides_container {
+            background-color: coral;
+            height: 100%;
+            
+        }
+        main .slide_wrap .slides_container .slide { height: 100%;}
+        main .slide_wrap .slides_container .slide .contents {
+            border: 2px solid red; width: 1400px; margin: 0 auto; 
+            
+        }
+        main .slide_wrap .slides_container .slide .contents .title {
+            border: 1px solid #111;
+            width: 40%; float: right;
+            padding-top: 170px;
+            
+        }
+        main .slide_wrap .slides_container .slide .contents .title img {}
+        main .slide_wrap .slides_container .slide .contents .bnr_link {}
+        main .slide_wrap .prev_btn, main .slide_wrap .next_btn {
+            background-color: yellow; position: absolute; top: 45%;
+        }
+        main .slide_wrap .prev_btn {right: 40%;}
+        main .slide_wrap .next_btn {left: 15%;}
+        main .slide_wrap .scroll_bg {
+            background-color: #ccc;
+            width: 1400px; height: 2px;margin: 0 auto;
+        }
+        main .slide_wrap .scroll_bg .scrollbar {}
+/* ========================================개별========================================= */
+        main .slide_wrap .slides_container .slide1 {background-image: url(./images/bnr1.jpg);background-size: cover; background-position: center;}
+        main .slide_wrap .slides_container .slide2 {background-image: url(./images/bnr2.jpg);background-size: cover; background-position: center; display: none;}
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="slide_wrap">
+            <div class="slides_container">
+                <div class="slide slide1">
+                    <div class="contents">
+                        <div class="title">
+                            <img src="./images/bnr1_title.png" alt="the profession all mascara the new volumizing lash tool our b">
+                            <a href="#" class="bnr_link">discover</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="contents">
+                        <div class="title">
+                            <img src="./images/bnr2_title..png" alt="the profession all mascara the new volumizing lash tool our b">
+                            <a href="#" class="bnr_link">discover</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <a href="#" class="next_btn"><img src="./images/bnr_next.png" alt="다음페이지"></a>
+                <a href="#" class="next_prev"><img src="./images/bnr_prev.png" alt="이전페이지"></a>
+            <div class="scroll_bg">
+                <div class="scrollbar"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
