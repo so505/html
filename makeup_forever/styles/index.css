@@ -142,15 +142,13 @@ main .slides_wrap .slides_container .slide {
     height: 100%; /* slides_container와 높이 동일 */
 }
 main .slides_wrap .slides_container .slide .contents {
-    border: 2px solid red;
+    border: 1px solid blue;
     width: 1400px; margin: 0 auto; overflow: hidden;
-    
 }
 main .slides_wrap .slides_container .slide .contents .title {
-    border: 1px solid #111;
+    border: 1px solid red;
     width: 40%; float: right;
     padding-top: 181px;
-
 }
 main .slides_wrap .slides_container .slide .contents .title img {}
 main .slides_wrap .slides_container .slide .contents .title .bnr_link {
@@ -179,7 +177,7 @@ main .slides_wrap .slides_container .slide1 {
     background-image: url(../images/bnr1.jpg);
     background-size: cover;
     background-position: center;
-    display: none;/* ======초기숨기기==== */
+    display: none;/* 초기 숨기기*/
 }
 main .slides_wrap .slides_container .slide1 .contents {}
 main .slides_wrap .slides_container .slide1 .contents .title {}
@@ -197,7 +195,6 @@ main .slides_wrap .slides_container .slide2 .contents .title {
 }
 main .slides_wrap .slides_container .slide2 .contents .title img {}
 main .slides_wrap .slides_container .slide2 .contents .title .bnr_link {
-    display: inline;
-    border: 1px solid #111;}
+    }
 main .slides_wrap .prev_btn {left: 190px;}
 main .slides_wrap .next_btn {right: 190px;}
