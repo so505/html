@@ -135,18 +135,15 @@ main .slides_wrap {
     height: 650px; /* 배너높이 고정(광고배너는 광고 요소에 따라 글자 단락이 다 다르기때문에 내용 기준으로 높이를 자동 높이 설정시 높낮이가 배너에 따라 달라지는 불균형문제가 발생한다. 그래서 광고배너는 높이를 px로 고정해야하는 경우들이 많다. 그외엔 자동높이 설정 권장!! */
 }
 main .slides_wrap .slides_container {
-    background-color: lime;
     height: 100%; /* slides_wrap와 높이 동일 */
 }
 main .slides_wrap .slides_container .slide {
     height: 100%; /* slides_container와 높이 동일 */
 }
 main .slides_wrap .slides_container .slide .contents {
-    border: 1px solid blue;
     width: 1400px; margin: 0 auto; overflow: hidden;
 }
 main .slides_wrap .slides_container .slide .contents .title {
-    border: 1px solid red;
     width: 40%; float: right;
     padding-top: 181px;
 }
@@ -160,7 +157,7 @@ main .slides_wrap .slides_container .slide .contents .title .bnr_link {
 }
 main .slides_wrap .slides_container .slide .contents .title .bnr_link:hover {font-weight: 700;}
 main .slides_wrap .prev_btn, main .slides_wrap .next_btn {
-    background-color: yellow;
+
     position: absolute; top: 45%;
 }
 main .slides_wrap .scroll_bg  {
@@ -198,3 +195,58 @@ main .slides_wrap .slides_container .slide2 .contents .title .bnr_link {
     }
 main .slides_wrap .prev_btn {left: 190px;}
 main .slides_wrap .next_btn {right: 190px;}
+/* ===========================3행 face best 상품 */
+main .face_best_wrap {
+    background-color: aqua;
+    width: 1400px; margin: 57px auto;
+}
+main .face_best_wrap .title {
+    background-color: lime;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    align-items: center;
+    margin-bottom: 17px;
+}
+main .face_best_wrap .title h2 {font-size: 1.88rem; font-weight: 500; letter-spacing: -0.02em;}
+main .face_best_wrap .title .more {letter-spacing: -0.02em;}
+main .face_best_wrap .contents {
+    background-color: yellow;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+main .face_best_wrap .contents li {
+    background-color: orange;
+    width: calc((100% - (30px * 2)) / 3);
+}
+main .face_best_wrap .contents li .product {
+    position: relative;  
+}
+main .face_best_wrap .contents li .product .label {
+    background-color: #fff;
+    position: absolute; top: 0; left: 0;
+    z-index: 10; display: inline-block;
+    padding: 5px 10px;
+
+}
+main .face_best_wrap .contents li .product > a {}
+main .face_best_wrap .contents li .product > a img {width: 100%;z-index: 8;}
+/* ===========================s:2행 마우스 올렸을때 */
+main .face_best_wrap .contents li .product:hover .icon{display: block;}
+main .face_best_wrap .contents li .product .icon {
+    border: 5px solid red;
+    position: absolute; left:0%; top: 127px; 
+    width: 100%; text-align: center;
+    display: none;/* ====최기 숨기기== */
+}
+main .face_best_wrap .contents li .product .icon a {opacity: 0.5;}
+main .face_best_wrap .contents li .product .icon a:hover {opacity: 1;}
+main .face_best_wrap .contents li .product .icon a img {}
+main .face_best_wrap .contents li .txt {}
+main .face_best_wrap .contents li .txt .category {
+    letter-spacing: -0.02em; margin: 10px 0; 
+}
+main .face_best_wrap .contents li .txt h3 {
+    font-size: 1.25rem; font-weight: 500; letter-spacing: -0.02em;
+}
+main .face_best_wrap .contents li .txt .price {
+    font-size: 1.13rem; letter-spacing: -0.02em;
+    margin-top: 35px; font-weight: 500;
+}
