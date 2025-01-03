@@ -3,9 +3,10 @@
 /* ====================header */
 .h_bg {background-color: #111; position: relative;} /* 배경=크기를 줄필요없음. 부모만 크기를 키우면 안된다.. */
 .h_bg header {
-    width: 1400px; margin: 0 auto; height: 125px; 
+    max-width:1400px; margin: 0 auto; height: 125px; 
     /*부모가 높이를 가져도 자식들은 auto인식한다(내용인식), 넓이는 부모를 따라감.  */
     display: flex; flex-flow: row nowrap; align-items: center; 
+    position: relative; 
 }
 .h_bg header h1 {}
 .h_bg header h1 a {}
@@ -21,11 +22,32 @@
 }
 .h_bg header .h_right .h_top .search {}
 .h_bg header .h_right .h_top .search > a {}
+.h_bg header .h_right .h_top .search .m_all_nav { display: none;}
 .h_bg header .h_right .h_top .search > a img {}
 .h_bg header .h_right .h_top  > a {
     margin-left: 16px; 
     font-size: 0.88rem; letter-spacing: -0.02em;
 }
+
+/* 모바일 메뉴클릭시 실행되는 서브메뉴 */
+.h_bg header .m_nav {background-color: lime;
+    width: 440px; height: 900px; position:fixed; left: 50%; bottom: 0; z-index: 10; 
+}
+.h_bg header .m_nav .login_join_cs {width: 100%;}
+.h_bg header .m_nav .login_join_cs a {}
+.h_bg header .m_nav  {}
+.h_bg header .m_nav > ul {}
+.h_bg header .m_nav > ul > li {}
+.h_bg header .m_nav > ul > li > a{}
+.h_bg header .m_nav > ul > li > .m_sub2 {}
+.h_bg header .m_nav > ul > li > .m_sub2 li {}
+.h_bg header .m_nav > ul > li > .m_sub2 li a{}
+
+
+
+
+
+
 /* ====================header 검색팝업(S)========================== */
 .h_bg header .h_right .h_top .search .search_popup {
     display: none; /*초기 숨기기(검색 아이콘 클릭 시에만 출력 대상)*/
@@ -101,7 +123,7 @@
     /* absolut, fixed 작성시 반드시 width 속성도 함께 써야한다 */
     } 
 .h_bg header .h_right .h_btm  nav .sub_bg .sub_contents {
-    width: 1400px; margin: 0 auto; height: 240px;
+    max-width:1400px; margin: 0 auto; height: 240px;
     display: flex; flex-flow: row nowrap;
     padding: 40px 0 0;
 }
@@ -141,7 +163,7 @@ main .slides_wrap .slides_container .slide {
     height: 100%; /* slides_container와 높이 동일 */
 }
 main .slides_wrap .slides_container .slide .contents {
-    width: 1400px; margin: 0 auto; overflow: hidden;
+    max-width:1400px; margin: 0 auto; overflow: hidden;
 }
 main .slides_wrap .slides_container .slide .contents .title {
     width: 40%; float: right;
@@ -162,7 +184,7 @@ main .slides_wrap .prev_btn, main .slides_wrap .next_btn {
 }
 main .slides_wrap .scroll_bg  {
     background-color: #ccc;
-    width: 1400px; height: 2px;
+    max-width:1400px; height: 2px;
     position: relative; bottom: 32px; margin: 0 auto;   /* *** */
 }
 main .slides_wrap .scroll_bg  .scrollbar {
@@ -198,7 +220,7 @@ main .slides_wrap .next_btn {right: 190px;}
 /* ===========================3행 face best 상품 */
 main .face_best_wrap {
     background-color: aqua;
-    width: 1400px; margin: 57px auto;
+    max-width:1400px; margin: 57px auto;
 }
 main .face_best_wrap .title {
     background-color: lime;
