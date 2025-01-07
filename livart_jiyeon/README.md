@@ -5,8 +5,8 @@
 font-size:1.13rem; letter-spacing:-0.02em; font-weight:500;
 ### 내용 18
 font-size:1.13rem; line-height:1.5; letter-spacing:-0.02em; font-weight:500;
-### 제목 40
-font-size:2.50rem;  letter-spacing: 0.05em; font-weight:500;
+### 제목 45
+font-size:2.81rem;  letter-spacing: 0.05em; font-weight:500;
 ### 소제목 36 (신제품,베스트)
 font-size:2.25rem; line-height:1.5; letter-spacing: -0.02em; font-weight:500;
 ### 소제목 20(제품명) 
@@ -23,4 +23,4 @@ font-size:1rem; line-height:1.5; letter-spacing:-0.02em; font-weight:600;
 
 # 스타일가이드 컬러 정보
 ## =====================desktop
-### 주 제목 컬러  #00587C
+### 주 컬러  #00587C
