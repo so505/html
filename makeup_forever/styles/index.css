@@ -30,18 +30,30 @@
 }
 
 /* 모바일 메뉴클릭시 실행되는 서브메뉴 */
-.h_bg header .m_nav {background-color: lime;
-    width: 440px; height: 900px; position:fixed; left: 50%; bottom: 0; z-index: 10; 
+.h_bg header .m_nav {background-color:rgba(255, 255, 255, 0.7); 
+    width: 100%; height: 500px; position:fixed; left: 0; top: 127px; z-index: 10; 
+    height:calc(100vh-125px); text-align: center;
+    display: none;
 }
-.h_bg header .m_nav .login_join_cs {width: 100%;}
-.h_bg header .m_nav .login_join_cs a {}
-.h_bg header .m_nav  {}
+.h_bg header .m_nav .login_join_cs {width: 100%;border: 1px solid #000; padding: 10px;}
+.h_bg header .m_nav .login_join_cs a {color: #000;}
+.h_bg header .m_nav .login_join_cs a:nth-of-type(2) {margin:0 20px;}
+.h_bg header > .m_nav  {color: #000;}
 .h_bg header .m_nav > ul {}
 .h_bg header .m_nav > ul > li {}
 .h_bg header .m_nav > ul > li > a{}
-.h_bg header .m_nav > ul > li > .m_sub2 {}
+.h_bg header .m_nav .m_sub1 {}
+.h_bg header .m_nav .m_sub1 li {border:1px solid #000;padding: 10px 0;}
+.h_bg header .m_nav .m_sub1 > li:nth-of-type(4) { 
+    
+}
+.h_bg header .m_nav .m_sub1 li a {color: #000; }
+.h_bg header .m_nav > ul > li > .m_sub2 {
+    background-color: #000;
+    
+}
 .h_bg header .m_nav > ul > li > .m_sub2 li {}
-.h_bg header .m_nav > ul > li > .m_sub2 li a{}
+.h_bg header .m_nav > ul > li > .m_sub2 li a{color: #fff;}
 
 
 
@@ -197,6 +209,7 @@ main .slides_wrap .slides_container .slide1 {
     background-size: cover;
     background-position: center;
     display: none;/* 초기 숨기기*/
+    
 }
 main .slides_wrap .slides_container .slide1 .contents {}
 main .slides_wrap .slides_container .slide1 .contents .title {}
@@ -208,6 +221,7 @@ main .slides_wrap .slides_container .slide2 {
     background-image: url(../images/bnr2.jpg);
     background-size: cover;
     background-position: center;
+    
 }
 main .slides_wrap .slides_container .slide2 .contents {}
 main .slides_wrap .slides_container .slide2 .contents .title {
@@ -217,13 +231,37 @@ main .slides_wrap .slides_container .slide2 .contents .title .bnr_link {
     }
 main .slides_wrap .prev_btn {left: 190px;}
 main .slides_wrap .next_btn {right: 190px;}
+
+/* ===========================2행 new 상품 */
+main .new_item_wrap { max-width:1400px; margin: 100px auto;
+    display: flex; flex-flow:row nowrap ; justify-content: center ; align-items: center;
+}
+main .new_item_wrap .new_item_information {text-align: center;}
+main .new_item_wrap .new_item_information p:nth-child(1) {
+    font-size: 2.19rem; font-weight: 500; letter-spacing: -0.02em;
+    background-color: #000;color: #fff; display: inline-block; padding: 10px 34px;
+    margin-bottom: 55px;
+}
+main .new_item_wrap .new_item_information p:nth-child(2) {font-size: 1.75rem; font-weight: 500;letter-spacing: -0.02em; margin-bottom: 15px;}
+main .new_item_wrap .new_item_information p:nth-child(4) {font-size: 1.56rem; font-weight: 500;letter-spacing: -0.02em; line-height: 1.5; margin-bottom: 69px;}
+main .new_item_wrap .new_item_information h2 {font-size: 2.50rem;font-weight: 700; margin-bottom: 29px;}
+main .new_item_wrap .new_item_information h3 {font-size: 1.56rem; font-weight: 500; margin-bottom: 29px;}
+main .new_item_wrap .new_item_information p span {color: #D40022; font-size: 2.19rem; letter-spacing: -0.02em;font-weight: 500;}
+main .new_item_wrap .new_item_information p span del {
+    color: #575656; font-size: 1.88rem;
+}
+main .new_item_wrap .new_item_img {text-align: center; margin-left: 149px; }
+main .new_item_wrap .new_item_img a {}
+main .new_item_wrap .new_item_img p {margin-top: 17px; font-size: 0.94rem;letter-spacing: -0.02em;}
+
+
+
+
 /* ===========================3행 face best 상품 */
 main .face_best_wrap {
-    background-color: aqua;
     max-width:1400px; margin: 57px auto;
 }
 main .face_best_wrap .title {
-    background-color: lime;
     display: flex; flex-flow: row nowrap; justify-content: space-between;
     align-items: center;
     margin-bottom: 17px;
@@ -231,11 +269,9 @@ main .face_best_wrap .title {
 main .face_best_wrap .title h2 {font-size: 1.88rem; font-weight: 500; letter-spacing: -0.02em;}
 main .face_best_wrap .title .more {letter-spacing: -0.02em;}
 main .face_best_wrap .contents {
-    background-color: yellow;
     display: flex; flex-flow: row nowrap; justify-content: space-between;
 }
 main .face_best_wrap .contents li {
-    background-color: orange;
     width: calc((100% - (30px * 2)) / 3);
 }
 main .face_best_wrap .contents li .product {

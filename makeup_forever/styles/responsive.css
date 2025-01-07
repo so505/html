@@ -1,6 +1,6 @@
 @media screen and (max-width: 1400px) {
 /* ==============S:태블릿 (너비가 1400이하)== */
-.h_bg {padding: 0 80px;}
+.h_bg {padding: 0 80px;} 
 /* ==============E:태블릿 (너비가 1400이하)== */
 }
 @media screen and (max-width: 1000px) {
@@ -17,6 +17,9 @@
     .h_bg {padding: 0 15px;}
     .h_bg header .h_right .h_btm .h_b_left a,
     .h_bg header .h_right .h_btm  nav > a {font-size: 0.88rem;}
+    main .new_item_wrap {margin: 50px auto; flex-flow:column nowrap ;
+
+    }
 
 
     /* ==============E:모바일 (너비가 730이하)== */
@@ -30,5 +33,6 @@
 .h_bg header .h_right .h_top .search > a img {width: 24px;}
 .h_bg header h1 {position:relative; top: 0px;}
 .h_bg header .h_right .h_top .search .m_all_nav {display: inline-block;}
+.h_bg header .m_nav{display:block }
 /* ==============E:모바일 (너비가 600이하)== */
 }
