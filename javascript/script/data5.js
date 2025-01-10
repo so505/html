@@ -55,6 +55,7 @@ btn.addEventListener('click',function(){
 })
 
 
+
 //================증감연산자 공부
 let x=5;
 let y=x++; //x++ 증가연산자(1씩증가) 후위연산자
@@ -131,10 +132,13 @@ const todayResult=document.querySelector('.todayResult span');
 // console.log(transportPay,foodPay,coffeePay,totalBtn,todayResult)
 // console.log(totalPrice)
 
-totalBtn.addEventListener('click',function(){
+totalBtn.addEventListener('click',todayFunc);
+
+function todayFunc(){
     let totalPrice=Number(transportPay.value)+Number(foodPay.value)+Number(coffeePay.value);
-    todayResult.innerHTML=totalPrice.toLocaleString('ko-kr'); //세자리 콤마 표시 (총계에만 적용한다)
-})
+    todayResult.innerHTML=totalPrice.toLocaleString('ko-kr');
+}
+
 
 
 //목표: 입금시 1000원 주는 자바스크립트 은행
@@ -158,8 +162,78 @@ const depositBtn=document.querySelector('#deposit_btn');
 const bankTotal=document.querySelector('#bank_total1');
 
 depositBtn.addEventListener('click',function(){
-    let deposit=Number(bankInput.value)+1000;
+    bankFunc(Number(bankInput.value)*0.1);
+})
+function bankFunc(interest){
+    let deposit=Number(bankInput.value)+interest;
     total +=deposit;
     bankInput.value=0; //입금후 입금창 금액은 없어짐.
     bankTotal.value=total.toLocaleString('ko-kr');  //innerHTML(속성)
-});
+}
+
+
+
+
+
+//==========함수의 변경되는 데이터 매개변수 공부
+//function 함수명(매개변수){함수실행값}// 함수선언식(선언만으로 결과는 출력안됨)
+//함수명(매개변수);//함수호출식(함수 선언 후 호출은 위, 아래 어디든 작성가능)
+
+//*매개변수가 없는 함수
+//카페 키오스크는 아메리카노만 주문이 가능하다. 수량도 무조건 1잔만 주문가능
+//출력예) 아메리카노 1잔 나왔습니다
+// function kiosk(){
+//     func_result.innerHTML = '아메리카노 1잔 나왔습니다';
+// }
+//*매개변수가 있는 함수 (매개변수생성>)
+// function kiosk(num){
+//     func_result.innerHTML =`아메리카노 ${num}잔 나왔습니다`;
+// }
+//*매개변수가 2개 있는 함수(메뉴와 수량을 변경가능)
+function kiosk(menu,num){
+    func_result.innerHTML =`${menu} ${num}잔 나왔습니다`;
+}
+const func_btn=document.querySelector('#func_btn');
+const func_result=document.querySelector('.func_result');
+let user_num=5;
+let user_menu='카페라떼';
+// func_btn.addEventListener('click',kiosk); //두가지방법
+func_btn.addEventListener('click',function(){kiosk(user_menu,user_num)});
+
+
+//===============함수의 return(외부로~ 반환값) 공부 
+// 예) console.log에서 출력하지않고 화면으로 표시할때 값만 외부로 반환한다. (함수 하나당 한개만 리턴가능)
+function func1(x,y){
+    //console.log(x+y);
+    return x+y; // 실행 메서드를 포함하지 않고 외부에서 필요한 결과값만 반환한다.
+    console.log('test');  //리턴밑에 있어서 실행되지않는다. (색깔 투명해짐)
+}
+//func1(1,2);
+console.log(func1(1,2));//실행식을 함수 호출값을 가진채로 작성한다.
+alert(func1(2,3)); 
+
+let num1=10;
+let num2=20;
+function func2(x,y){
+    num1+=num2;
+    num2=x+y;
+    num1+=num2;
+    return console.log(num1); // console.log로 고정할경우 내부에 작성하고 밖에선 호출만 한다
+}
+// console.log(func2(2,4)); //36
+func2(2,4);
+
+
+//================구구단 만들기
+//사용자가 2를입력하면 2x1 ~ 2x9 구구단 결과가 p태그에 출력되는 결과
+//사용자가 5를입력하면 5x1 ~ 5x9 구구단 결과가 p태그에 출력되는 결과
+const danInput=document.querySelector('#dan');
+const danBtn=document.querySelector('#danBtn');
+const danBtnresult=document.querySelector('.dan99result');
+
+function dan99(dan){
+    danBtnresult.innerHTML=`${dan}*1=${dan*1}<br>`; //innerHTML명령어가 있어서 br적용가능함
+    danBtnresult.innerHTML+=`${dan}*2=${dan*2}<br>`;
+    danBtnresult.innerHTML+=`${dan}*3=${dan*3}<br>`;
+}
+danBtn.addEventListener('click',function(){dan99(Number(danInput.value));})
