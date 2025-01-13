@@ -1,0 +1,43 @@
+.bg {
+    width: 589px; margin: 0 auto;
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 180px 71px 142px 71px;
+}
+.bg .bmi {text-align: center; width: 446px;}
+.bg .bmi h1 {
+    font-size: 1.13rem; font-weight: 500; letter-spacing: -0.02em; color: #1D6CA0;
+}
+.bg .bmi > p {width: 220px; height: 2px; background-color: #1D6CA0; display: inline-block;}
+.bg .bmi .height_wrap  { margin-top: 62px;}
+.bg .bmi .height_wrap label {
+    font-size: 1.13rem; font-weight: 500; letter-spacing: -0.02em; color: #000;
+    
+}
+.bg .bmi .height_wrap #height {
+    background-color:#D0D6D6 ; width: 133px;border-radius: 5px;
+    padding: 2px; position: relative; left: 5px;
+}
+.bg .bmi .weight_wrap {margin-top: 14px;}
+.bg .bmi .weight_wrap label{font-size: 1.13rem; font-weight: 500; letter-spacing: -0.02em; color: #000;}
+.bg .bmi .weight_wrap #weight{background-color:#D0D6D6 ; width: 133px;border-radius: 5px;padding: 2px;}
+.bg .bmi #calculateBmi {
+    font-size: 1.13rem; font-weight: 500; letter-spacing: -0.02em; color: #000;
+    background-color: #D0D6D6; width: 222px; padding: 11px 0;
+    border-radius: 5px; margin-top: 51px;
+    
+}
+.bg .bmi #calculateBmi:hover{background-color: #1D6CA0;}
+.bg .bmi .result_wrap {margin-top: 43px; }
+.bg .bmi .result_wrap .result { font-weight: 500; letter-spacing: -0.02em; font-size: 0.94rem; }
+.bg .bmi .result_wrap .result .proper {}
+.bg .bmi .result_wrap > p:nth-of-type(2){font-size: 0.81rem; margin-top: 10px;}
+.bg .bmi .result_wrap .result .excess_s {color: #1D6CA0;}
+.bg .bmi .result_wrap .result .excess_txt {color: #1D6CA0;font-weight: 500; letter-spacing: -0.02em;}
+.bg .bmi .infor {text-align: left; margin-top: 105px;}
+.bg .bmi .infor h2 {font-size: 1.06rem; font-weight: 500;letter-spacing: -0.02em; margin-bottom: 10px;}
+.bg .bmi .infor p:nth-of-type(1) {font-size: 0.88rem;letter-spacing: -0.02em;margin-bottom: 16px;color: #000;}
+.bg .bmi .infor p:nth-of-type(2) {font-size: 0.81rem;letter-spacing: -0.02em; line-height: 1.5;color: #000;}
+.bg .bmi .infor p:nth-of-type(3) {font-size: 0.81rem;letter-spacing: -0.02em; line-height: 1.5;color: #000;}
+

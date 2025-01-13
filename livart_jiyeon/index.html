@@ -48,12 +48,13 @@
                 <p>리바트의  <span>첫번째 추천</span></p>
                 <p>공간의 크기에 따라, 필요한 모듈구성에 따라<br>커스텀이 가능한 드레스 룸입니다<br>추천세트구성과 9종의단일 상품으로 조합하여<br>나만의 드레스룸을 만들어보세요</p>
                 <a href="#" class="more">상품 보러가기</a>
-            </div>
+            
             <!-- 메인 페이지 넘기기 버튼-->
-            <div class="next_btn">
-                <a href="#"><img src="./images/circle_btn_on.png" alt="다음페이지" class="active"></a>
-                <a href="#"><img src="./images/circle_btn_off.png" alt="다음페이지" ></a>
-                <a href="#"><img src="./images/circle_btn_off.png" alt="다음페이지" ></a>
+                <div class="next_btn">
+                    <a href="#"><img src="./images/circle_btn_on.png" alt="다음페이지" class="active"></a>
+                    <a href="#"><img src="./images/circle_btn_off.png" alt="다음페이지" ></a>
+                    <a href="#"><img src="./images/circle_btn_off.png" alt="다음페이지" ></a>
+                </div>
             </div>
             <!-- 메인배너 2행-->
             <div class="main_banner banner_2">
@@ -69,24 +70,32 @@
                 <div class="products_wrap">
                     <!-- 개별 신상품 -->
                     <div class="products_1">
-                        <a href="#"><img src="./images/newitem_001.jpg" alt="리토서랍장"></a>
-                        <h3>여유있는 깊이감과 더 많은 수납을 위한 아이방에 리토 서랍장</h3>
-                        <p><span>12%</span><del>369,000원</del></p>
+                        <!-- <a href="#"><img src="./images/newitem_001.jpg" alt="리토서랍장"></a> -->
+                        <p>여유있는 깊이감과 더 많은 수납을 위한 아이방에</p>
+                        <h3>리토 서랍장</h3>
+                        <p>12%</p>
+                        <p><span></span><del>369,000원</del></p>
                         <p>326,800원</p>
                     </div>
-                    <div class="products_2">
-                        <a href="#"><img src="./images/newitem_002.jpg" alt="리토2단서랍장"></a>
-                        <img src="./images/LIVART.png" alt="">
-                        <h3>리토2단 이동서랍</h3>
-                        <p><span>10%</span><del>176,000원</del></p>
-                        <p>158,400원</p>
-                    </div>
-                    <div class="products_3">
-                        <a href="#"><img src="./images/newitem_003.jpg" alt="레티4인 식ㅌ탁벤치의자"></a>
-                        <img src="./images/LIVART.png" alt="">
-                        <h3>레티 4인 식탁벤치의자</h3>
-                        <p><span>10%</span><del>245,000원</del></p>
-                        <p>220,500원</p>
+                    <div class="products2_wrap">
+                        <div class="products_2">
+                            <a href="#"><img src="./images/newitem_002.jpg" alt="리토2단서랍장"></a>
+                            <div class="products_text">
+                                <img src="./images/LIVART.png" alt="">
+                                <h3>리토2단 이동서랍</h3>
+                                <p><span>10%</span><del>176,000원</del></p>
+                                <p>158,400원</p>
+                            </div>
+                        </div>
+                        <div class="products_2">
+                            <a href="#"><img src="./images/newitem_003.jpg" alt="레티4인 식ㅌ탁벤치의자"></a>
+                            <div class="products_text">
+                                <img src="./images/LIVART.png" alt="">
+                                <h3>레티 4인 식탁벤치의자</h3>
+                                <p><span>10%</span><del>245,000원</del></p>
+                                <p>220,500원</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,32 +103,36 @@
             <div class="bestseller">
                 <h2>이번 달 베스트 셀러</h2>
                 <div class="bestseller_tabs">
-                    <a href="#" class="action">소파</a>
+                    <a href="#" class="active">소파</a>
                     <a href="#" >테이블</a>
                     <a href="#" >침대</a>
                     <a href="#" >수납장</a>
                     <a href="#" >키즈</a>
-                    <a href="#" >생활.데코코</a>
+                    <a href="#" >생활.데코</a>
                 </div>
                 <!-- 개별 베스트상품 -->
                 <div class="best_container">
                     <div class="best_itmes">
                         <a href="#"><img src="./images/best_item_001.jpg" alt="네오 튜탐3인 패브릭소파"></a>
-                        <a href="#"><img src="./images/LIVART.png" alt=""></a>
-                        <h3>네오 뉴탐3인 패브릭 소파</h3>
-                        <P>663,000원</P>
+                        <div class="best_itme_text">
+                            <a href="#"><img src="./images/LIVART.png" alt=""></a>
+                            <h3>네오 뉴탐3인 패브릭 소파<br><span>663,000원</span></h3>
+                        </div>
                     </div>
                     <div class="best_itmes">
                         <a href="#"><img src="./images/best_item__002.jpg" alt="네오 튜탐3인 패브릭소파"></a>
-                        <a href="#"><img src="./images/LIVART.png" alt=""></a>
-                        <h3>프리즘 2인 패브릭소파  베이지</h3>
-                        <P>416,000원</P>
+                            <div class="best_itme_text">
+                            <a href="#"><img src="./images/LIVART.png" alt=""></a>
+                            <h3>프리즘 2인 패브릭소파  베이지<br><span>416,000원</span></h3>
+                        </div>
                     </div>
                     <div class="best_itmes">
                         <a href="#"><img src="./images/best_item__003.jpg" alt="네오 튜탐3인 패브릭소파"></a>
-                        <a href="#"><img src="./images/LIVART.png" alt=""></a>
-                        <h3>클라우드 1인 가죽 소파</h3>
-                        <P>304,000원</P>
+                        <div class="best_itme_text">
+                            <a href="#"><img src="./images/LIVART.png" alt=""></a>
+                            <h3>클라우드 1인 가죽 소파<br><span>304,000원</span></h3>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -137,7 +150,7 @@
                         <p>코스트만들기 원데이 클래스</p>
                         <a href="#"><img src="./images/craft_001.jpg" alt="코스트만들기 원데이 클래스"></a>
                     </div> 
-                    <div class="ccraft_info">
+                    <div class="craft_info">
                         <p>방연당 전통공예의 현대적인 재해석</p>
                         <a href="#"><img src="./images/craft_002.jpg" alt="방연당 전통공예의 현대적인 재해석"></a>
                     </div>

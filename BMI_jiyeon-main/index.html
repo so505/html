@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>적정체중구하기</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/bmi.css">
+    <script src="./script/bmi.js" defer></script>
+</head>
+<body>
+    <div class="bg">
+        <div class="bmi">
+            <h1>BMI(체질량지수)계산기</h1>
+            <p></p>
+            <div class="height_wrap">
+                <label for="height"> 키(cm):</label>
+                <input type="number" name="height" id="height" required>
+            </div>
+            <div class="weight_wrap">
+                <label for="weight">체중(kg):</label>
+                <input type="number" name="weight" id="weight"required>
+            </div>
+            <button type="button" id="calculateBmi" onclick="calcBmi()">BMI 계산하기</button>
+            <div class="result_wrap">
+                <p class="result">
+                    당신의 <span class="excess_s">적정체중</span>은 <span class="proper"></span>kg 이며,  <span class="excess"></span>kg<span class="excess_txt">초과</span>되었습니다.
+                </p>
+                <P ><span class="bmicalc_text" ></span> 입니다.</P>
+            </div>
+            <div class="infor">
+                <h2>체질량 지수란?</h2>
+                <p>(BMI, Body, Msaa Index, kg/㎡) 즉, 지방의 양을 추정해 비만도를 나타내는 지수로 체중과 신장의 관계를 의미합니다.</p>
+                <p>• BMI = 체중(kg) / 신장(㎥)</p>
+                <p>• BMI를 계산하는 방법 :체중(kg)을 키(cm)의 제곱으로 나누는 것입니다. 예를 들어 170cm인 사람이 70kg의 체중을 가졌을 경우, 체질량 지수는 70/1.7 로 계산하여 BMI는 24.2가 됩니다. </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
