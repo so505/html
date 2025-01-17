@@ -242,3 +242,14 @@ text-transform: 영문 대소문자 바꾸기
     /* js 이벤트 대상으로 a태그 사용 시 href="#" 속성으로 인해 클릭시 스크롤이 위로 자동으로 올라가는 문제점이 발생한다.*/
     /*(위)해결방법 :DOM객체 클 시 발생하는 속성(a태그의 경우 href)는 이벤트 내 매개변수로 저장되는 특징이 있는데 이를 이용해 이벤트를 막아주는 메서드를 활용하면 위 문제를 해결 할수 있다.*/  
     //1.매개변수 e생성->e.preventDefault();
+
+-리셋파일에 적용 
+    @font-face {
+    font-family:AppleSDGothicNeoM;
+    src: url(../fonts/AppleSDGothicNeoM.ttf);
+}
+@font-face {
+    font-family:AppleSDGothicNeoB;
+    src: url(../fonts/AppleSDGothicNeoB.ttf);
+}
+... {font-family: AppleSDGothicNeoM, sans-serif;}
