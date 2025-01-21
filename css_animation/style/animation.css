@@ -1,0 +1,43 @@
+/* ====animation */
+.ball{
+    width: 100px; height: 100px;
+    border-radius: 50%;
+    background: red;
+    /* animation: 불러올 프레임명, 지속시간, 진행속도, 지연시간, 반복횟수, 재생방향, 종료스타일;  (필요하지않는 값은 생략가능) */
+    animation: move1 2s linear 0.5s 3 alternate both; 
+}
+/* infinite 무한반복, ease*/
+/* 재생방향: reverse: 반대방향 */
+/* 재생방향 alternate: 한번은 정방향,다음은 역방으로 실행된다(조건: 반복횟수 2회이상)*/
+/* 재생방향 alternate-reverse: 한번은 역방향,다음은 정방향으로 실행된다(조건: 반복횟수 2회이상)*/
+/* 종료스타일:boht (많이사용)  */
+
+.ball2{
+    width: 100px;
+    animation: move2 1s linear 0.5s 3 alternate both;
+}
+.ball2 img {
+    width: 100px;
+    animation:rotate360 2s linear 0.5s 3 alternate-reverse both;
+}
+
+
+/* ====@keyframes */
+/* 애니메이션 프레임이 많을 경우 keyframes.css 별도 관리하기도 한다. */
+/* @keyframes 애니메이션이름{분기별 애니메이션 제작} */
+/* 회전(rotate)과 이동(translate) 속성은 나눠서 작성한다 */
+/*이름을 알기쉽게 정리한다 */
+@keyframes move1{
+    0%{transform: translateX(0)}
+    100%{transform: translateX(300px)}
+}
+@keyframes rotate360{
+    0%{transform:rotate(0)}
+    100%{transform:rotate(360deg)}
+}
+@keyframes move2{
+    0%{transform: translate(0,0)}
+    25%{transform: translate(20px,200px)}
+    50%{transform: translate(800px,0)}
+    100%{transform: translateX(0,0)}
+}
