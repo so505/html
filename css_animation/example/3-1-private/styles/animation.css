@@ -1,0 +1,21 @@
+
+
+@keyframes tire{
+    0%{transform: rotateX(0);}
+    100%{transform: rotate(360deg);}
+}
+@keyframes scroll{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(30px);}
+}
+
+@keyframes bg_move{ /* 끊기지않고 계속 흐르는건 무조건 백그라운드이미지 */
+    0%{background-position-x:0;}
+    100%{background-position-x:1000px;}
+}
+main .car #left_tire,
+main .car #right_tire {animation: tire 1s linear infinite;}
+main .scroll {animation: scroll 0.5s linear alternate infinite;}
+main .bg_wrap .bg1{animation: bg_move 100s linear infinite;}
+main .bg_wrap .bg2{animation: bg_move 30s linear infinite;}
+main .bg_wrap .bg3{animation: bg_move 10s linear infinite;}

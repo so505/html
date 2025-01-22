@@ -42,7 +42,15 @@
             background:url(images/bg_flow.png) repeat-x left top;
             height:150px; width:100%;
             position:absolute; z-index:30;
+            animation: bg_ani_move 25s linear infinite;   /* 애니메이션1 */
         }
+
+        @keyframes bg_ani_move{
+            0%{background-position-x: 0;}
+            100%{background-position-x: -1400px;}
+        }
+
+
     </style>
 </head>
 <body>

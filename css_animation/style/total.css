@@ -1,0 +1,51 @@
+/* transition + transform */
+/* transition: 기존 속성에 이벤트에 의해 변화가 있을 때 애니메이션 적용 */
+/* transform:2d,3, 회전, 이동,크기,기울기, 적용 속성(중심축 변경특징) */
+#btn {
+    border: 2px solid #000; padding: 20px 100px;
+    transform: skewX(-5deg);
+    transition: transform 0.3s;
+}
+#btn:hover {transform: skewX(0);}
+.link {
+    display: block; width: 150px; height: 150px;
+    background: radial-gradient(circle,#fff,#ddd);
+    border-radius: 50%;
+    background-size: 250%;background-position: center;
+    text-align: center; line-height: 150px; /* 글씨 중앙위치로 설정*/
+    transition: background-size 1s;
+
+}
+.link:hover {
+    background-size: 100%;
+    animation: scale 0.5s ease alternate both;
+}
+@keyframes scale{
+    0%{transform: scale(1)}
+    30%{transform: scale(0.9)}
+    70%{transform: scale(1)}
+    100%{transform: scale(1.1)}
+}
+
+/* 시간차 애니메이션 */  
+
+.city {
+    width: 1000px; margin: 0 auto; padding: 20px;
+    background-color: #fff;
+}
+.city .car {width: 100px; position: relative; left: 0;}
+.city .car img {width: 100%;}
+.city .car1 {animation: carMove 1s both;}
+.city .car2 {
+    filter: hue-rotate(120deg); 
+    animation: carMove 1s 0.3s both;
+} 
+.city .car3 {
+    filter: hue-rotate(-50deg); 
+    animation: carMove 0.8s  alternate-reverse ;
+    transform: scaleX(-1); /* 좌우반전 */ 
+}
+@keyframes carMove{
+    from{left: 0;}
+    to{left: 800px;}
+}
