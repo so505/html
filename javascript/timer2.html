@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <script src="./script/timer2.js"defer></script>
+    <style>
+        .news_container {
+            width: 800px; height: 40px; margin: 50px;
+            border: 1px solid #ccc; border-radius: 5px;
+            overflow: hidden;  /* #list가 news_container안에서만 보이도록 */
+            /* position: relative; */
+        }
+        .news_container #list {
+            background-color: #eee;
+            transform: translateY(0);  /* 방법1 */
+            /* position:relative; top: -40px;  *//* 방법2 */
+            /* position: absolute; width: 100%; left: 0; top: -40px; /*방법3 */
+        }
+        .news_container #list li {
+            line-height: 40px; padding: 0 10px;
+        }
+
+        /* ===============연습 =============*/
+        .news_container2 {
+            width: 800px; height: 40px; margin: 10px;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+        .news_container2 #list2 {
+            background-color: rgb(34, 90, 175);
+            transform: translateX(0);
+            width: max-content; display: flex;  /*  옆으로 이동한 li의 모든크기를 인식하기위해 max-content*/
+
+        }
+        .news_container2 #list2 li { /* 옆으로 나열하려면 크기가 필요 */
+            line-height: 40px; padding:0 10px; color: #fff; 
+            width: 800px; 
+        }
+
+    </style>
+</head>
+<body>
+    <button type="button" id="btn">STOP!</button>
+    <hr>
+    <div class="news_container">
+        <ul id="list">
+            <li>공지사항 1:새로운 업데이트가 출시되었습니다.</li>
+            <li>공지사항 2:서버 점검 일정이 확정되었습니다.</li>
+            <li>공지사항 3:이벤트가 곧 시작 됩니다. 많은 참여 바랍니다.</li>
+            <li>공지사항 4:고객 지원 팀이 강화되었습니다.</li>
+            <!-- <li>공지사항 1:새로운 업데이트가 출시되었습니다.</li> -->
+        </ul>
+    </div>
+    <div class="news_container2">
+        <ul id="list2">
+            <li>공지사항 1:새로운 업데이트가 출시되었습니다.</li>
+            <li>공지사항 2:서버 점검 일정이 확정되었습니다.</li>
+            <li>공지사항 3:이벤트가 곧 시작 됩니다. 많은 참여 바랍니다.</li>
+            <li>공지사항 4:고객 지원 팀이 강화되었습니다.</li>
+        </ul>
+    </div>
+</body>
+</html>
