@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커리어 상부선반 책상 | 리바트몰</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/product.css">
+    <link rel="stylesheet" href="./style/common.css">
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <!-- 좌측 로고,네비 -->
+            <h1><a href="#"><img src="./images/logo.jpg" alt="리바트"></a></h1>
+            <div class="menu">  
+                <nav>
+                    <ul>
+                        <li><a href="#">인테리어</a></li>
+                        <li><a href="#">리모델링</a></li>
+                        <li><a href="#">가구</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#">오피스</a></li>
+                        <li><a href="#">세계가구</a></li>
+                    </ul>
+                </nav>
+                <!-- 중앙 검색 -->
+                <div class="search">
+                    <input type="text" name="search" placeholder="깔끔한 인테리어">
+                    <img src="./images/search.png" alt="검색하기">
+                </div>
+                <!-- 우측 로그인 -->
+                <div class="right_menu">
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">장바구니</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </header>
+        <main>
+            <!-- 상품 이미지-->
+            <div class="product_container">
+                <div class="photo">
+                    <div class="big">
+                        <img src="./images/big_product_001.jpg" alt="">
+                    </div>
+                    <div class="small">
+                        <a href="#" class="active"><img src="./images/product_001.jpg" alt=""></a>
+                        <a href="#"><img src="./images/product_002.jpg" alt=""></a>
+                        <a href="#"><img src="./images/product_003.jpg" alt=""></a>
+                        <a href="#"><img src="./images/product_004.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="contents">
+                    <p class="brand">LIVART</p>
+                    <div class="title">
+                        <h1><em>[BEST]</em>커리어 상부선반 책상</h1>
+                        <a href="#"><img src="./images/heart.png" alt="좋아요찜"></a>
+                        <a href="#"><img src="./images/share.png" alt="공유하기"></a>
+                    </div>
+                    <p class="price_before"><del>225,000</del></p>
+                    <p class="price_result"><span class="sale">7%</span><span class="price">210,000</span>원</p>
+                    <p><em>상품코드</em></p>
+                    <dl>
+                        <dt>상품코드</dt>
+                        <dd>P200012386</dd>
+                        <dt>배송정보 </dt>
+                        <dd>무료/직접배송</dd>
+                    </dl>
+                    <dl>
+                        <dt>추가혜택 정보</dt>
+                        <dd>무이자혜택</dd>
+                        <dd>결제혜택</dd>
+                        <dd>H.POINT 적립<em>(H.Point 통합 회원만 적립 가능합니다.)</em></dd>
+                        <!-- 옵션선택 -->
+                    </dl>
+                    <div class="order_contents">
+                        <div class="order size">
+                            <select name="size" id="size">
+                                <option value="">사이즈 선택</option>
+                                <option value="1200">1200</option>
+                                <option value="1400">1400</option>
+                                <option value="1600">1600</option>
+                            </select>
+                            <img src="./images/arrow_down.png" alt="">
+                        </div>
+                        <div class="order color">
+                            <select name="color" id="color">
+                                <option value="">색상 선택</option>
+                                <option value="black">오크+그레이 </option>
+                                <option value="berry">오크+오크 </option>
+                                <option value="berry">화이트+그레이(+20,000원)</option>
+                                <option value="berry">화이트+오크(+20,000원)</option>
+                            </select>
+                            <img src="./images/arrow_down.png" alt="">
+                        </div>
+                        <!-- 전체선택 -->
+                        <div class="all_selection">
+                            <div class="check_box">
+                                <input type="checkbox" name="selection_y" id="selection_y">
+                                <label for="selection_y">전체선택</label>
+                            </div>
+                            <div class="num_pricc">
+                                <h3><!--1200/화이트+그레이--></h3>
+                                <div class="num">
+                                    <button type="button" id="minus">-</button>
+                                    <input type="number" name="product_num" id="product_num">
+                                    <button type="button" id="plus">+</button>
+                                </div>
+                                <p><em class="price"><!--210,000--></em>원</p>
+                            </div>
+                        </div>
+                        <!-- 토탈 금액 -->
+                        <div class="total">
+                            <h2>총 합계 금액</h2>
+                            <p><span class="total_price">210,000</span>원</p>
+                        </div>
+                        <!-- 결제하기 -->
+                        <div class="order_btn">
+                            <button type="button" id="cart_btn">장바구니</button>
+                            <button type="button" id="buy_btn">바로결제</button>
+                            <div class="pay">
+                                <h3>간편결제</h3>
+                                <button type="button" id="kakao_pay"></button>
+                                <button type="button" id="naver_pay"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer_contents">
+                <!-- 푸터 왼쪽 -->
+                <div class="footer_left">
+                    <a href="#"><img src="./images/qr.png" alt="리바트몰 바로가기"></a>
+                    <a href="#"><img src="./images/ccm.png" alt="공정거래위원회 기"></a>
+                </div>
+                <!-- 푸터 중앙 -->
+                <address>
+                    <p>(주)현대리바트  대표이사 윤기철<br>본사 경기도 용인시 남사읍 경기동로 316<br>사업자등록번호 135-81-32239<br>통신판매업신고 2014-용인처인-00049<br>livartcs@hyundailivart.co.kr</p>
+                    <p>Copyright &copy;HYUNDAI LIVART Corporation. All Rights Reserved.</p>
+                    <p>고객센터 1577-3332</p>
+                    <p>평일 (오전 9:00~오후 6:00)</p>
+                </address>
+                <!-- 푸터 오른쪽 -->
+                <div class="footer_right">
+                    <a href="#"><img src="./images/ft_logo.png" alt="리바트몰 바로가기"></a>
+                    <p>
+                        <a href="#">FAMILY SITE</a>
+                        <img src="./images/down.png" alt="패밀리회사 보기">
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

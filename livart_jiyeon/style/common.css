@@ -1,0 +1,72 @@
+#wrap {}
+#wrap header {
+    max-width:1400px; margin: 0 auto; height: 100px; 
+    display: flex; flex-flow: column nowrap; justify-content: space-between;
+
+}
+/* ---- 좌측 로고,네비 ----> */
+#wrap header h1 {margin-bottom: 25px;}
+#wrap header .menu {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; 
+}
+#wrap header .menu nav {
+}
+#wrap header .menu nav ul {display: flex; flex-flow: row nowrap; align-items: center;}
+#wrap header .menu nav ul li {
+    margin-right: 20px; padding-top: 8.2px;
+    font-size:1.15rem; letter-spacing:-0.02em; font-weight:500;
+    
+}
+#wrap header .menu nav ul li:last-child {margin: 0;}
+#wrap header .menu nav ul li:nth-child(4) {
+    border:1px solid #000;
+    height: 20px;
+}
+#wrap header .menu nav ul li a {}
+/*----중앙 검색-----  */
+#wrap header .menu .search {
+    background-color: #00587C;
+    display: flex; flex-flow: row nowrap; align-items: center;
+    border-radius: 20px; 
+}
+#wrap header .menu .search input[name=search] {
+    background-color: #00587C; padding: 8px 100px 8px 20px;
+    border-radius: 20px;
+    }
+#wrap header .menu .search input[name=search]::placeholder {font-weight: 500;letter-spacing: -0.02em; color: #fff;}
+#wrap header .menu .search img {width: 14px;height: 14px; margin-right: 10px;}
+/*----우측 메뉴-----  */
+#wrap header .menu .right_menu {
+
+}
+#wrap header .menu .right_menu ul {display: flex; flex-flow: row nowrap; align-items: center;}
+#wrap header .menu .right_menu ul li {
+    padding-top: 8.2px;
+    font-size:1.13rem; letter-spacing:-0.02em; font-weight:500;
+    margin-right: 20px;
+}
+#wrap header .menu .right_menu ul li:last-child {margin: 0;}
+/* ==================푸터============ */
+#wrap footer {
+    
+    padding: 38px 387px 25px;
+}
+#wrap footer .footer_contents {
+    display: flex; flex-flow: row wrap;justify-content: space-between;align-items: center;
+}
+#wrap footer .footer_contents .footer_left {}
+#wrap footer .footer_contents .footer_left a {}
+#wrap footer .footer_contents .footer_left a img {}
+#wrap footer .footer_contents address {}
+#wrap footer .footer_contents address p {}
+#wrap footer .footer_contents .footer_right {
+    display: flex; flex-flow: column nowrap; align-items: center;
+}
+#wrap footer .footer_contents .footer_right a {}
+#wrap footer .footer_contents .footer_right a img {}
+#wrap footer .footer_contents .footer_right p {
+    background-color: #fff;
+    display: flex;align-items: center; padding: 7px 24px;
+}
+#wrap footer .footer_contents .footer_right p a {}
+#wrap footer .footer_contents .footer_right p img {}

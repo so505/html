@@ -1,0 +1,81 @@
+
+#wrap main {width: 1400px; margin: 0 auto;}
+#wrap main .product_container {
+    display: flex; flex-flow: row nowrap;
+}
+#wrap main .product_container .photo {
+    background-color: coral;
+}
+#wrap main .product_container .photo .big {}
+#wrap main .product_container .photo .big img {}
+#wrap main .product_container .photo .small {}
+#wrap main .product_container .photo .small a {}
+#wrap main .product_container .photo .small a img {}
+#wrap main .product_container .photo .small a.active {}
+#wrap main .product_container .contents {
+    background-color: yellow;
+}
+#wrap main .product_container .contents .brand {}
+#wrap main .product_container .contents .title {}
+#wrap main .product_container .contents .title h1 {}
+#wrap main .product_container .contents .title h1 em {}
+#wrap main .product_container .contents .title a {}
+#wrap main .product_container .contents .title a img {}
+#wrap main .product_container .contents .price_before {}
+#wrap main .product_container .contents .price_result {}
+#wrap main .product_container .contents .price_result span {}
+#wrap main .product_container .contents .price_result span .price{}
+#wrap main .product_container .contents p{}
+#wrap main .product_container .contents p em{}
+#wrap main .product_container .contents dl {}
+#wrap main .product_container .contents dl dt {}
+#wrap main .product_container .contents dl dt dd{}
+#wrap main .product_container .contents dl dt dd em {}
+/* =============옵션 선택==================== */
+#wrap main .product_container .contents .order_contents {
+    background-color:skyblue;
+}
+#wrap main .product_container .contents .order_contents .order {}
+#wrap main .product_container .contents .order_contents .order #size {}
+#wrap main .product_container .contents .order_contents .order #size option {}
+#wrap main .product_container .contents .order_contents .order #color {}
+#wrap main .product_container .contents .order_contents .order #color option {}
+#wrap main .product_container .contents .order_contents .order img {}
+/* ============전체 선택====================== */
+#wrap main .product_container .contents .all_selection .check_box {
+    background-color: olive;
+}
+#wrap main .product_container .contents .all_selection .check_box #selection_y {}
+#wrap main .product_container .contents .all_selection .check_box #selection_y:checked+label {}
+#wrap main .product_container .contents .all_selection .check_box #selection_y:checked+label::before {}
+#wrap main .product_container .contents .all_selection .check_box label::before {}
+
+#wrap main .product_container .contents .all_selection .num_pricc {}
+#wrap main .product_container .contents .all_selection .num_pricc h3 {}
+#wrap main .product_container .contents .all_selection .num_pricc .num {}
+#wrap main .product_container .contents .all_selection .num_pricc .num #minus {}
+#wrap main .product_container .contents .all_selection .num_pricc .num #plus {}
+#wrap main .product_container .contents .all_selection .num_pricc p {}
+#wrap main .product_container .contents .all_selection .num_pricc p em {}
+/* ===============토탈 금액================= */
+#wrap main .product_container .contents .total {
+    background-color: brown;
+}
+#wrap main .product_container .contents .total h2 {}
+#wrap main .product_container .contents .total p {}
+#wrap main .product_container .contents .total p .total_price {}
+/* ==============결제 하기================== */
+#wrap main .product_container .contents .order_btn {
+    background-color: hotpink;
+}
+#wrap main .product_container .contents .order_btn #cart_btn {}
+#wrap main .product_container .contents .order_btn #buy_btn {}
+#wrap main .product_container .contents .order_btn .pay {}
+#wrap main .product_container .contents .order_btn .pay h3 {}
+#wrap main .product_container .contents .order_btn .pay h3 #kakao_pay {}
+#wrap main .product_container .contents .order_btn .pay h3 #naver_pay {}
+#wrap footer {background-color:gray}
+
+
+
+

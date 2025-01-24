@@ -2,7 +2,7 @@
 #wrap header {
     max-width:1400px; margin: 0 auto; height: 100px; 
     display: flex; flex-flow: column nowrap; justify-content: space-between;
-   
+
 }
 /* ---- 좌측 로고,네비 ----> */
 #wrap header h1 {margin-bottom: 25px;}

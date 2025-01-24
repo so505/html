@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiper 2. 옵션추가</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script/swiper2.js" defer></script>
+    <style>
+        .best_swiper {
+            width: 100%; height: 100vh; margin: 0 auto;
+
+        }
+        .best_swiper .swiper-wrapper {}
+        .best_swiper .swiper-wrapper .swiper-slide {
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .best_swiper .swiper-wrapper .swiper-slide .contents {
+            width: 1200px;
+        }
+        .best_swiper .swiper-wrapper .swiper-slide {}
+        .best_swiper .swiper-wrapper .slide1 {
+            background: url(./images/bnr.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+        .best_swiper .swiper-wrapper .slide1 .contents {
+            width: 1200px;
+            /* margin: 0 auto;  */
+            /* padding-top: 500px;  */
+            padding-left: 20px;
+            position: absolute; bottom: 304px; left: 50%; transform: translateX(-50%);/*앱솔루트를 했을때 기준에서 50%더 왼쪽으러 와라.(앱솔+레프트+트랜스폼)  */
+            /*앱솔은 마진0오토 안먹힌다  */
+            /* border: 2px solid yellow; */
+        }
+        .best_swiper .swiper-wrapper .slide1 .contents .sub_title {
+            font-size: 1.38rem; font-weight: 500;
+            margin-bottom: 24px;
+        }
+        .best_swiper .swiper-wrapper .slide1 .contents h1 {
+            font-size: 3.13rem; font-weight: 700;
+            margin-bottom: 22px;
+        }
+        .best_swiper .swiper-wrapper .slide1 .contents p {
+            line-height: 1.5;
+        }
+
+        .best_swiper .swiper-wrapper .slide2 {
+            background: url(./images/bnr_002.jpg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .best_swiper .swiper-wrapper .slide2 .contents{
+            position: absolute; top: 136px; left: 50%; transform: translateX(-50%);
+        }
+        .best_swiper .swiper-wrapper .slide2 .contents .sub_title {
+            font-size: 1.38rem; font-weight: 500;
+            margin-bottom: 24px;
+        }
+        .best_swiper .swiper-wrapper .slide2 .contents  p {
+            line-height: 1.5;
+        }
+        .best_swiper .swiper-wrapper .slide2 .contents  h1{
+            font-size: 3.13rem; font-weight: 700;
+            margin-bottom: 22px;
+        }
+        .best_swiper .swiper-wrapper .slide3 {
+            background: url(./images/bnr_003.jpg);
+            background-size:cover ;
+            background-position: center;
+            position: relative;
+        }
+        .best_swiper .swiper-wrapper .slide3::after {
+            content:''; display:block;
+            position:absolute; width:100%; height:50vh; left:0; bottom:0;
+            z-index:100; background:linear-gradient(transparent, #000);
+        } /* transparent 투명하게 */
+        
+        .best_swiper .swiper-wrapper .slide3 .contents{
+            z-index:200;
+            position: absolute; text-align: right;
+            bottom: 204px;
+            right: 50%;
+            transform: translateX(50%);
+        }
+        .best_swiper .swiper-wrapper .slide3 .contents .sub_title {
+            font-size: 1.38rem; font-weight: 500; color: #fff;
+            margin-bottom: 24px;
+        }
+        .best_swiper .swiper-wrapper .slide3 .contents p {
+            line-height: 1.5; color: #fff;
+        }
+        .best_swiper .swiper-wrapper .slide3 .contents  h1{
+            font-size: 3.13rem; font-weight: 700;
+            margin-bottom: 22px; color: #fff;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- <h1>Swiper 자바스크립트 슬라이드 제작 플러그인</h1>
+    <p>1. swiper사용을 위한 css,js 외부파일 경로연결</p>
+    <p>2. 정해진 클래스와 가족관계를 주의하면서 HTML작성하기</p>
+    <p>2-1 (위) 요소에 사용자정의 클래스 별도로 설정하기</p>
+    <p>3. swiper의 가장바깥쪽 부모에 width, height CSS설정하기</p>
+    <p>3-1 swiper 자식, 자손 정해진 요소들의 css는 함부로 설정하지 않기</p>
+    <p>4. swiper 대입될 변수 생성하고 new Swiper 함수명으로 2-1에서 설정한 사용자정의클래스(가장 바깥쪽 swiper 기준) 대입하기</p>
+    <p>5. 필요에 따라 Swiper 자바스크립트 속성:값 추가 가능</p>
+    <hr> -->
+    <!-- Slider 보이는영역 (사용자정의 클래스 필수!!!)-->
+    <div class="swiper best_swiper">
+        <!-- 실제 움직이는 영역-->
+        <div class="swiper-wrapper">
+            <!-- 개별슬라이드(사용자정의클래스 작성권장) -->
+            <div class="swiper-slide slide1"> <!--bnr1-->
+                <div class="contents">
+                    <p class="sub_title">역사의 향기가 머무는곳 </p>
+                    <h1>경복궁에서 만나는 시간 여행</h1>
+                    <p>고즈넉한 한옥 길을 걸으며<br>시간을 거슬러 올라가 보세요</p>
+                </div>
+            </div>
+            <div class="swiper-slide slide2">
+                <div class="contents">
+                    <p class="sub_title">역사의 향기가 머무는곳 </p>
+                    <h1>경복궁에서 만나는 시간 여행</h1>
+                    <p>고즈넉한 한옥 길을 걸으며<br>시간을 거슬러 올라가 보세요</p>
+                </div>
+            </div>
+            <div class="swiper-slide slide3">
+                <div class="contents">
+                    <p class="sub_title">역사의 향기가 머무는곳 </p>
+                    <h1>경복궁에서 만나는 시간 여행</h1>
+                    <p>고즈넉한 한옥 길을 걸으며<br>시간을 거슬러 올라가 보세요</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
