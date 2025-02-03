@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll 자바스크립 </title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <script src="./script/scroll1.js" defer></script>
+    <style>
+        body,html {
+            height: 300vh;
+            background:linear-gradient(aqua,lime,yellow,pink)
+        }
+        .circle {
+            pointer-events: none;   /*필수*/
+            position: fixed; top: 0; left: 0;
+            width: 50px; height: 50px; border-radius: 50%;
+            background-color: red;
+            transition: left 2s,top 2s linear;
+        }
+        .top {
+            width: 100px; height: 100px; background-color: yellowgreen;
+            text-align: center; line-height: 100px;
+            cursor:pointer;
+            position: fixed; z-index: 999; right: 50px; bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="top">위로</div>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper 옵션4. 반응웹과 반응형슬라이드</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./style/reset.css">
+    <script src="./script/swiper_op4.js" defer></script>
+    <style>
+        .new_slide_wrap {
+            /* width: 100%;  margin: 0 auto; height: 100vh; */
+            max-width: 1200px;  margin: 0 auto; height: 500px; 
+            /* 이쪽에만 사이즈 줄것. 개별슬라이드는 안됨 */
+            background-color: aqua;
+        }
+        .new_slide_wrap .swiper-wrapper {}
+        .new_slide_wrap .swiper-wrapper .swiper-slide {
+            font-size: 4rem; font-weight: 700;
+            text-align: center; line-height: 400px; color: #fff;
+            text-shadow: 0 040px rgba(0, 0, 0, 0.3);
+            background-position: center; background-size: cover;
+        }
+        .new_slide_wrap .swiper-wrapper .slide1 {
+            background-image: url(./images/bnr.jpg);
+        }
+        .new_slide_wrap .swiper-wrapper .slide2 { background-image: url(./images/bnr_002.jpg);}
+        .new_slide_wrap .swiper-wrapper .slide3 { background-image: url(./images/bnr_003.jpg);}
+    </style>
+</head>
+<body>
+    <div class="swiper new_slide_wrap">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide1">Slide 1</div>
+            <div class="swiper-slide slide2">Slide 2</div>
+            <div class="swiper-slide slide3">Slide 3</div>
+            <div class="swiper-slide slide1">Slide 4</div>
+            <div class="swiper-slide slide2">Slide 5</div>
+            <div class="swiper-slide slide3">Slide 6</div>
+        </div>
+    </div>
+</body>
+</html>
