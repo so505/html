@@ -1,3 +1,5 @@
+
+//헤더 스크롤
 document.addEventListener("DOMContentLoaded", function () {
     const container = document.querySelector("header");
     const changePoint = 80; // 변경되는 스크롤 높이(px)
