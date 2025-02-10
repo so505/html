@@ -6,12 +6,380 @@
     <title>홈  | 크레모아 </title>
     <link rel="shortcut icon" href="./images/logo_s.png" type="image/x-icon">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto Serif KR:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/responsive.css">
     <script src="./script/index.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
+    <header>
+        <div class="header-container">
+            <h1><a href="#"><img src="./images/logo_top.png" alt=""></a></h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">NEW</a></li>
+                    <li class="has-submenu" ><a href="#">CLAYMORE</a></li> 
+                    <li><a href="#">PRISM</a></li>
+                    <li><a href="#">BROADWING</a></li>
+                    <li><a href="#">BRAND</a></li>
+                    <li><a href="#">CS CENTER</a></li>
+                </ul>
+                <!-- CLAYMORE 메뉴 -->
+                <div class="sub_bg">
+                    <div class="sub_contents">
+                        <ul class="depth1">
+                            <li><a href="#">감성랜턴</a>
+                                <ul class="depth2">
+                                    <li><a href="#">칸델라</a></li>
+                                    <li><a href="#">아테나</a></li>
+                                    <li><a href="#">셀레네</a></li>
+                                    <li><a href="#">캐빈</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">웨어러블라이트</a>
+                                <ul class="depth2">
+                                    <li><a href="#">헤드랜턴</a></li>
+                                    <li><a href="#">캡라이트</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">캠핑랜턴</a>
+                                <ul class="depth2">
+                                    <li><a href="#">이너프</a></li>
+                                    <li><a href="#">3페이스 네오 </a></li>
+                                    <li><a href="#">멀티페이스</a></li>
+                                    <li><a href="#">미니랜턴</a></li>
+                                    <li><a href="#">울트라</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">필드기어</a>
+                                <ul class="depth2">
+                                    <li><a href="#">스위블체어</a></li>
+                                    <li><a href="#">헤브온 베스트</a></li>
+                                    <li><a href="#">IGT 익스팬드 40</a></li>
+                                    <li><a href="#">화로대 아르더 33</a></li>
+                                    <li><a href="#">릴 케이블20</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">선풍기</a>
+                                <ul class="depth2">
+                                    <li><a href="#">M14</a></li>
+                                    <li><a href="#">V1500</a></li>
+                                    <li><a href="#">V1040</a></li>
+                                    <li><a href="#">V600+</a></li>
+                                    <li><a href="#">핸디A</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">악세서리</a>
+                                <ul class="depth2">
+                                    <li><a href="#">캠핑랜턴ACC</a></li>
+                                    <li><a href="#">감성랜턴ACC</a></li>
+                                    <li><a href="#">캡온/헤디ACC</a></li>
+                                    <li><a href="#">랜턴 스탠드</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>    
+            </nav>
+            <div class="header_icons">
+                <a href="#"><img src="./images/search.png" alt="검색"></a>
+                <a href="#"><img src="./images/shopping_cart.png" alt="장바구니"></a>
+                <a href="#"><img src="./images/person.png" alt="마이페이지"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- 메인 비디오 -->
+        <div class="main_bnr">
+            <video src="./images/CLAYMORE  감성랜턴 시리즈.mp4" autoplay muted controls loop ></video>
+            <div class="bnr_content">
+                <p>빛으로 채우는 당신의 하루, 모든 순간에 감성을 더하다</p>
+                <h2>감성 조명의 시작, 크레모아</h2>
+            </div>
+        </div>
+        <!-- 엠디 픽 -->
+        <div class="md_pick">
+            <h2 class="title">MD'S PICK</h2>
+            <div class="product_list">
+                <div class="product">
+                    <a href="#"><img src="./images/mdpick_001.jpg" alt="쉐이드 스노우맨 무드등" ></a>
+                    <div class="product_text">
+                        <h3 class="product_title">CLAYMORE  UF5 쉐이드 스노우맨 무드등</h3>
+                        <p class="discount_price">19,900원 <span class="sail">5%</span></p> 
+                        <p ><del class="original_price">20,940원</del></p>
+                        <p><img src="./images/srar_5.png" alt="별점"> (758)</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="#"><img src="./images/mdpick_002.jpg" alt="헤디3 블랙 LED 아웃도어 조명 충전식" ></a>
+                    <div class="product_text">
+                        <h3 class="product_title">CLAYMORE 헤디3 블랙 LED 아웃도어 조명 충전식</h3>
+                        <p class="discount_price">65,550원 </p> 
+                        <p><img src="./images/srar_5.png" alt="별점"> (1,259)</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="#"><img src="./images/mdpick_003.jpg" alt="캡온 200H 캡라이트  낚시 작업등" ></a>
+                    <div class="product_text">
+                        <h3 class="product_title">CLAYMORE 캡온 200H 캡라이트  낚시 작업등</h3>
+                        <p class="discount_price">69,000원 </p> 
+                        <p><img src="./images/srar_5.png" alt="별점"> (1,650)</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <a href="#"><img src="./images/mdpick_004.jpg" alt="감성램프 칸델라" ></a>
+                    <div class="product_text">
+                        <h3 class="product_title">CLAYMORE 감성램프 칸델라</h3>
+                        <p class="discount_price">53,100원 <span class="sail">10%</span></p> 
+                        <p ><del class="original_price">59,000원</del></p>
+                        <p><img src="./images/srar_5.png" alt="별점"> (562)</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="more_btn">더보기 +</button>
+        </div>
+        <!-- 광고 배너 슬라이드-->
+        <div class="slides_wrap">
+            <div class="slides_container intro_bnr">
+                <div class="slide brod">
+                    <div class="slide_text">
+                        <a href="#"><img src="./images/bnr_logo_bro.png" alt=""></a>
+                        <h4>창의성을 밝히는 , 브로드 윙</h4>
+                        <p>집중력 향상및 생체리듬을 고려한 하이퀄리티<br>스탠드조명 라인 입니다.</p>
+                        <a href="#"><p class="read_more">자세히 보기</p></a>
+                    </div>
+                </div>
+                <div class="slide prism">
+                    <div class="slide_text">
+                        <a href="#"><img src="./images/bnr_logo_pri.png" alt=""></a>
+                        <h4>일상의 포인트가 되다</h4>
+                        <p>눈이 편안한 조명라인으로 일상생활에서<br>편하게  사용할수있는 라인입니다.</p>
+                        <a href="#"><p class="read_more">자세히 보기</p></a>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <!-- 베스트 아이템 슬라이드 -->
+          <div class="slides_wrap best_item">
+            <h3 class="product_title">BEST ITEM</h3>
+            <ul>
+                <li><a href="#">캠핑랜턴</a></li>
+                <li><a href="#">웨어러블라이트</a></li>
+                <li><a href="#">필드기어</a></li>
+                <li><a href="#">데스크스탠드</a></li>
+                <li><a href="#">악세서리</a></li>
+            </ul>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <div class="slides_container product_list">
+                            <div class="slide product">
+                                <a href="#"><img src="./images/best_item_001.jpg" alt="LED헤드랜턴"></a>
+                                <h3 class="product_text_title">CLAYMORE  헤디2 LED 헤드랜턴</h3>
+                                <p class="discount_price">56,050원<span class="sail">5%</span></p> 
+                                <p ><del class="original_price">59,000</del></p>
+                                <p><img src="./images/srar_5.png" alt="별점">(758)</p>
+                            </div>
+                            <div class="slide product">
+                                <a href="#"><img src="./images/best_item_002.jpg" alt="LED헤드랜턴"></a>
+                                <h3 class="product_text_title">CLAYMORE  헤디3 LED 헤드랜턴</h3>
+                                <p class="discount_price">65,550원</p> 
+                                <p><img src="./images/srar_5.png" alt="별점">(1,259)</p>
+                            </div>
+                            <div class="slide product">
+                                <a href="#"><img src="./images/best_item_003.jpg" alt="아테나 휴대용램프"></a>
+                                <h3 class="product_text_title">CLAYMORE 아테나 충전식 휴대용 램프</h3>
+                                <p class="discount_price">105,300원<span class="sail">사은품증정</span></p> 
+                                <p><img src="./images/srar_5.png" alt="별점">(925)</p>
+                            </div>
+                            <div class="slide product">
+                                <a href="#"><img src="./images/best_item_004.jpg" alt="이너프7감성조명"></a>
+                                <h3 class="product_text_title">CLAYMORE 이너프7 감성조명</h3>
+                                <p class="discount_price">99,000원</p> 
+                                <p><img src="./images/srar_5.png" alt="별점">(129)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <div class="slides_container product_list">
+                            <div class="slide product">
+                                <a href="#"><img src="./images/best_item_001.jpg" alt="LED헤드랜턴"></a>
+                                <h3 class="product_text_title">CLAYMORE  헤디2 LED 헤드랜턴</h3>
+                                <p class="discount_price">56,050원<span class="sail">5%</span></p> 
+                                <p ><del class="original_price">59,000</del></p>
+                                <p><img src="./images/srar_5.png" alt="별점">(758)</p>
+                            </div>
+                            <div class="slide product">
+                                <a href="#"><img src="./images/best_item_002.jpg" alt="LED헤드랜턴"></a>
+                                <h3 class="product_text_title">CLAYMORE  헤디3 LED 헤드랜턴</h3>
+                                <p class="discount_price">65,550원</p> 
+                                <p><img src="./images/srar_5.png" alt="별점">(1,259)</p>
+                            </div>
+                            <div class="slide product">
+                                <a href="#"><img src="./images/best_item_003.jpg" alt="아테나 휴대용램프"></a>
+                                <h3 class="product_text_title">CLAYMORE 아테나 충전식 휴대용 램프</h3>
+                                <p class="discount_price">105,300원<span class="sail">사은품증정</span></p> 
+                                <p><img src="./images/srar_5.png" alt="별점">(925)</p>
+                            </div>
+                            <div class="slide product">
+                                <a href="#"><img src="./images/best_item_004.jpg" alt="이너프7감성조명"></a>
+                                <h3 class="product_text_title">CLAYMORE 이너프7 감성조명</h3>
+                                <p class="discount_price">99,000원</p> 
+                                <p><img src="./images/srar_5.png" alt="별점">(129)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--  이전, 다음 제어 버튼 -->
+            <a href="#" class="prev_btn"><img src="./images/arrow_prev.png" alt="앞으로가기"></a>
+            <a href="#" class="next_btn"><img src="./images/arrow_next.png" alt="뒤로가기"></a>
+          </div>
+          <!-- 프로모션 -->
+          <div class="promotions">
+            <div class="promotions_contents">
+                <div class="pr_text">
+                    <div class="arrow">
+                        <p>2025년 새해맞이 프로모션</p>
+                        <a href="#"><img src="./images/arrow_circle.png" alt="바로가기"></a>
+                    </div>
+                    <p>프리즘 라인 - 브로드윙 라인 구매시<br><span>할인혜택이 팡팡!!</span></p>
+                    <p>2025. 1. 01(월) ~ 1. 30(목)</p>
+                </div>
+                <div class="pr_poto">
+                    <a href="#"><img src="./images/promotions_001.jpg" alt="할인"></a>
+                    <a href="#"><img src="./images/promotions_002.jpg" alt="사은품"></a>
+                </div>
+            </div>
+            
+          </div>
+          <!-- 뉴 아이템 -->
+          <div class="new_item">
+            <h2 class="title">NEW  ITEM</h2>
+            <div class="product_list">
+                <div class="product">
+                    <a href="#"><img src="./images/new_item_001.jpg" alt="프리즘 무드등&가습기PMFH-2306C"></a>
+                    <h3 class="product_title">프리즘 무드등&가습기PMFH-2306C</h3>
+                    <p class="discount_price">59,000원<span class="savemoney">5% 적립금 (2,950원)</span></p> 
+                </div>
+                <div class="product">
+                    <a href="#"><img src="./images/new_item_002.jpg" alt="크레모아 에이프런 A 만능 다용도 수납조끼"></a>
+                    <h3 class="product_title">크레모아 에이프런 A 만능 다용도 수납조끼</h3>
+                    <p class="discount_price">59,000원</p> 
+                </div>
+                <div class="product">
+                    <a href="#"><img src="./images/new_item_003.jpg" alt="크레모아 팬 M14 무선 캠핑 써큘레이터" ></a>
+                    <h3 class="product_title">크레모아 팬 M14 무선 캠핑 써큘레이터</h3>
+                    <p class="discount_price">259,000원</p> 
+                </div>
+                <div class="product">
+                    <a href="#"><img src="./images/new_item_004.jpg" alt="크레모아 스위블 체어 Mini 휴대용 캠핑의자"></a>
+                    <h3 class="product_title">크레모아 스위블 체어 Mini 휴대용 캠핑의자</h3>
+                    <p class="discount_price">54,900원</p> 
+                </div>
+                <div class="product">
+                    <a href="#"><img src="./images/new_item_005.jpg" alt="크레모아 램프 카델라 전용케이스 " ></a>
+                    <h3 class="product_title">크레모아 램프 카델라 전용케이스 </h3>
+                    <p class="discount_price">12,900원<span class="savemoney">5% 적립금 (650원)</span></p> 
+                </div>
+                <div class="product">
+                    <a href="#"><img src="./images/new_item_006.jpg" alt="크레모아 이너프7 LED스트링라이트 " ></a>
+                    <h3 class="product_title">크레모아 이너프7 LED스트링라이트 </h3>
+                    <p class="discount_price">179,000원</p> 
+                </div>
+                <div class="product">
+                    <a href="#"><img src="./images/new_item_007.jpg" alt="프리즘 플럼프 스탠드 PI-200DG" ></a>
+                    <h3 class="product_title">프리즘 플럼프 스탠드 PI-200DG</h3>
+                    <p class="discount_price">34,800원<span class="savemoney">5% 적립금 (1,740원)</span></p> 
+                </div>
+                <div class="product">
+                    <a href="#"><img src="./images/new_item_008.jpg" alt="크레모아 울트라 2 3.0M 캠핑 작업등" ></a>
+                    <h3 class="product_title">크레모아 울트라 2 3.0M 캠핑 작업등</h3>
+                    <p class="discount_price">99,000원</p> 
+                </div>
+            </div>
+            <button type="button" class="more_btn">더보기 +</button>
+        </div>
+        <!-- 쇼케이스 -->
+        <div class="showcase_warp">
+            <div class="showcase_top">
+                <a href="#"><img src="./images/showcase_left.jpg" alt="#"></a>
+                <div class="showcase_content">
+                    <a href="#"><img src="./images/showcase_right.jpg" alt="#"></a>
+                    <h5>삶의 반경을 넓히다. 크레모아</h5>
+                    <p>도시의 일상으로 부터 자연으로의 여행,  극한의 도전과 탐험에 이르기까지 우리의 삶은 끊임없는<br> 움직임의 여정입니다.  크레모아는 기능성과 세련된 디자인으로 아웃도어 환경뿐만아니라 일상속<br>에서도 사랑받고 있습니다. 미지의 영역을 밝히는 빛처럼, 크레모아는 삶의 여정에 든든한 동반자<br>가 되어 누구든지 두려움없이 탐험하고,  자신의 함계를 벗어나 삶의 반경을 넓혀 갈수 있도록 도울<br>것입니다. </p>
+                </div>
+            </div>
+            <div class="showcase_bottom">
+                <div class="showcase_card bg_001">
+                    <div class="showcase_text">
+                        <p>ClAYMORE ARDOR 33</p>
+                        <a href="#"><h6>크레모아 초경량 LED 헤디3</h6></a>
+                        <p>센서 장착으로 완벽한 핸드프리</p>
+                    </div>
+                </div>
+                <div class="showcase_card bg_002">
+                    <div class="showcase_text">
+                        <p>ClAYMORE ARDOR 33</p>
+                        <a href="#"><h6>크레모아 3페이스 네오BTR</h6></a>
+                        <p>전용 앱으로 편리한 사용이 가능한 캠핑 조명</p>
+                    </div>
+                </div>
+                <div class="showcase_card bg_003">
+                    <div class="showcase_text">
+                        <p>ClAYMORE ARDOR 33</p>
+                        <a href="#"><h6>크레모아 IGT익스팬드40</h6></a>
+                        <p>무한 확장성과 다양한 호환성을 갖춘 초경량 캠핑 테이블</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </main>
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer_wrap">
+            <div class="ft_left">
+                <a href="#"><img src="./images/loho_bt.png" alt="회사로고"></a>
+                <div class="social">
+                    <a href="#"><img src="./images/SNS1.png" alt="Instagram"></a>
+                    <a href="#"><img src="./images/SNS2.png" alt="Facebook"></a>
     
+                    <a href="#"><img src="./images/SNS3.png" alt="YouTube"></a>
+                    <a href="#"><img src="./images/language.png" alt="Language"></a>
+                </div>
+            </div>
+            <div class="footer_info">
+                <p>상호명</p>
+                <p>(주)프리즘</p>
+                <p>대표자</p>
+                <p>윤병준</p>
+                <p>주소</p>
+                <p>21314 인천광역시 부평구 평천로 221 (청천동)</p>
+            </div>
+            <div class="footer_contact">
+                <p>고객센터</p>
+                <p><span>1588-2303</span></p>
+                <p>10:00~17:00 (공휴일 휴무)</p>
+                <p>이메일문의</p>
+                <p>prism@prismlight.co.kr</p>
+                <a href="#">AS 접수</a>
+            </div>
+            <div class="footer-legal">
+                <p>통신판매업 신고</p>
+                <p>2021-인천부평-2718[사업자정보확인]</p>
+                <a href="#">이용약관</a>
+                <a href="#">개인정보취급방침</a>
+                <a href="#">구매안전서비스 가입사실 확인</a>
+            </div>
+        </div>
+    </footer>
+    <!-- <a href="#" class="sidebar"><img src="./images/goup_btn.png" alt=""></a> -->
+    <button id="topBtn" class="top-button">▲</button>
 </body>
 </html>
