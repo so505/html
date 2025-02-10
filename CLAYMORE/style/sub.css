@@ -57,30 +57,98 @@ header .header-container nav .sub_bg.active {
     opacity: 1;
     transform: translateY(0);
 }
-
-
+/* ============================================================= */
 main {}
-main .breadcrumb {}
-main .breadcrumb a {}
-main .breadcrumb span {}
-main .breadcrumb .product_warp {}
-main .breadcrumb .product_warp .product-poto {}
-main .breadcrumb .product_warp .product-poto img {}
-main .breadcrumb .product_warp .product-poto .thumbnail_poto {}
-main .breadcrumb .product_warp .product-poto .thumbnail_poto img {}
-main .breadcrumb .product_warp .product_info {}
-main .breadcrumb .product_warp .product_info .top {}
-main .breadcrumb .product_warp .product_info .top h1 {}
-main .breadcrumb .product_warp .product_info .top .icon {}
-main .breadcrumb .product_warp .product_info .top .icon a {}
-main .breadcrumb .product_warp .product_info .price {}
-main .breadcrumb .product_warp .product_info .price .original_price {}
-main .breadcrumb .product_warp .product_info .price .discounted_price {}
-main .breadcrumb .product_warp .product_info .benefit {}
-main .breadcrumb .product_warp .product_info .benefit dt {}
-main .breadcrumb .product_warp .product_info .benefit dt dd {}
-main .breadcrumb .product_warp .product_info .benefit dt dd a {}
-main .breadcrumb .product_warp .product_info .option_group{}
+main .breadcrumb{
+    width: 1530px; margin: 0 auto; padding: 5px 0;
+    margin-top: 100px; background-color: coral; 
+    margin-bottom: 23px; color: #555;
+}
+main .breadcrumb a {font-size: 0.75rem; font-weight: 400; margin:0 2px;color: #555;}
+main .breadcrumb span {font-size: 0.80rem; font-weight: 500;color: #333;}
+main .product_warp {
+    width: 1350px; margin: 0 auto;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+main .product_warp .product-poto {
+    display: flex; flex-flow: column nowrap; align-items: center;
+}
+main .product_warp .product-poto  .big {width: 720px;}
+main .product_warp .product-poto  .big img {width: 100%;}
+main .product_warp .product-poto .thumbnail_poto {
+    background-color: yellow; padding: 10px 10px;
+}
+main .product_warp .product-poto .thumbnail_poto a {
+    width: 60px; margin-right: 2px;display: inline-block;
+}
+main .product_warp .product-poto .thumbnail_poto a img {width: 100%;}
+main .product_warp .product-poto .thumbnail_poto img:last-of-type {margin-right:0px;}
+main .product_warp .product_info {width: 518px; background-color: lime;}
+main .product_warp .product_info .top {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: top;
+}
+main .product_warp .product_info .top h1 {font-size: 1.50rem;font-weight: 600; line-height: 1.3;}
+main .product_warp .product_info .top .icon {}
+main .product_warp .product_info .top .icon a {width: 24px;display: inline-block;}
+main .product_warp .product_info .top .icon a img {width: 100%;}
+main .product_warp .product_info .price {}
+main .product_warp .product_info .price .original_price {}
+main .product_warp .product_info .price .discounted_price {}
+main .product_warp .product_info .benefit {background-color: blueviolet;}
+main .product_warp .product_info .benefit dt {
+    
+}
+main .product_warp .product_info .benefit dt dd {display: inline-block;}
+main .product_warp .product_info .benefit dt dd a {}
+main .product_warp .product_info .option_wrap {}
+main .product_warp .product_info .option_wrap .option_group {}
+main .product_warp .product_info .option_wrap .option_group label {}
+main .product_warp .product_info .option_wrap .option_group #size {}
+main .product_warp .product_info .option_wrap .option_group #size option {}
+main .product_warp .product_info .option_wrap .option_group img {}
+main .product_warp .product_info .option_wrap .option_group #additiona {}
+main .product_warp .product_info .option_wrap .option_group #additiona option {}
+main .product_warp .product_info .option_wrap .option_group .color_options {}
+main .product_warp .product_info .option_wrap .option_group .color_options span {}
+main .product_warp .product_info .option_wrap .all_selection {}
+main .product_warp .product_info .option_wrap .all_selection #selection_y {}
+main .product_warp .product_info .option_wrap .all_selection h3 {}
+main .product_warp .product_info .option_wrap .num_pricc {}
+main .product_warp .product_info .option_wrap .num_pricc .num {}
+main .product_warp .product_info .option_wrap .num_pricc .num #minus {}
+main .product_warp .product_info .option_wrap .num_pricc .num #plus {}
+main .product_warp .product_info .option_wrap .num_pricc .num #product_num {}
+main .product_warp .product_info .option_wrap .num_pricc p {}
+main .product_warp .product_info .option_wrap .num_pricc .total {}
+main .product_warp .product_info .option_wrap .num_pricc .total h2 {}
+main .product_warp .product_info .option_wrap .num_pricc  p {}
+main .product_warp .product_info .option_wrap .num_pricc .total_price {}
+main .product_warp .product_info .option_wrap .num_pricc .order_btn {}
+main .product_warp .product_info .option_wrap .num_pricc .order_btn #cart_btn {}
+main .product_warp .product_info .option_wrap .num_pricc .order_btn #buy_btn {}
+main .tap {background-color: aqua;
+    width: 1530px; margin: 0 auto;
+    display: flex; flex-flow: row nowrap;
+}
+main .tap li {width: calc(100% / 4); text-align: center;}
+main .tap li a {}
+main .product_page {}
+main .product_page img {}
+main .review {}
+main .review .top_review p {}
+main .review .top_review a {}
+main .review .slide2 {}
+main .review .slide2.swiper-wrapper {}
+main .review .slide2.swiper-wrapper .swiper-slide {}
+main .review .slide2.swiper-wrapper .swiper-slide a {}
+main .review .slide2.swiper-wrapper .swiper-slide a img {}
+main .review .prev_btn {}
+main .review .prev_btn img {}
+main .review .review_text {}
+main .review .review_text ul {}
+main .review .review_text ul li {}
+main .review .review_text ul li img {}
+main .review .more_btn {}
 
 
 
