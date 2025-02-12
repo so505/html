@@ -1,4 +1,3 @@
-
 //헤더 스크롤
 document.addEventListener("DOMContentLoaded", function () {
     const container = document.querySelector("header");
@@ -92,22 +91,45 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    const links = document.querySelectorAll("a"); // 모든 a 태그 선택
+    // const links = document.querySelectorAll("a"); // 모든 a 태그 선택
 
-    links.forEach(link => {
-        link.addEventListener("click", function (event) {
-            event.preventDefault(); // 기본 동작(상단 이동) 방지
+    // links.forEach(link => {
+    //     link.addEventListener("click", function (event) {
+    //         event.preventDefault(); // 기본 동작(상단 이동) 방지
+    //     });
+    // });
+    //a 태그 새창으로 
+    // document.querySelectorAll('a').forEach(link => {
+    //     link.setAttribute('target', '_blank');
+    // });
+    document.querySelectorAll('a').forEach(link => {
+        link.addEventListener("click", function(event) {
+            const href = this.getAttribute("href"); // href 속성 가져오기
+            
+            if (!href || href === "#") {
+                event.preventDefault(); // 빈 링크일 경우 기본 동작(상단 이동) 방지
+            } else {
+                event.preventDefault(); // 기본 동작 방지 (새 창에서 열리도록 설정)
+                window.open(href, '_blank'); // 새 창에서 열기
+            }
         });
     });
-    
+
+
 
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const targetElement = document.querySelector(".target-element"); // 숨길 요소 선택
+// document.addEventListener("DOMContentLoaded", function () {
+//     const targetElement = document.querySelector(".target-element"); // 숨길 요소 선택
 
-    // 마우스를 올리면 요소 숨기기
-    targetElement.addEventListener("mouseenter", function () {
-        this.style.display = "none"; // 요소를 완전히 숨김
-    });
+//     // 마우스를 올리면 요소 숨기기
+//     targetElement.addEventListener("mouseenter", function () {
+//         this.style.display = "none"; // 요소를 완전히 숨김
+//     });
+// });
+
+
+$("li").click(function(){
+    $("li").removeClass("active"); 
+    $(this).addClass("active"); 
 });
