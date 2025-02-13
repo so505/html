@@ -108,10 +108,10 @@ document.addEventListener("DOMContentLoaded", function () {
             
             if (!href || href === "#") {
                 event.preventDefault(); // 빈 링크일 경우 기본 동작(상단 이동) 방지
-            } else {
-                event.preventDefault(); // 기본 동작 방지 (새 창에서 열리도록 설정)
-                window.open(href, '_blank'); // 새 창에서 열기
-            }
+            } //else {
+                // event.preventDefault(); // 기본 동작 방지 (새 창에서 열리도록 설정)
+                // window.open(href, '_blank'); // 새 창에서 열기
+            //}
         });
     });
 
