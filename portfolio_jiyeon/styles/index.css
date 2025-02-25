@@ -1,0 +1,66 @@
+body, html {}
+header {}
+header nav {
+    background-color: aqua ;
+    display: flex; flex-flow: column nowrap;
+}
+header nav .menu{}
+header nav .menu a {}
+header nav .menu a.active {}
+/* */
+.wrap {}
+.wrap .main_bg {}
+.wrap .main_bg video {}
+.wrap .main_bg .main_text {}
+.wrap .main_bg .main_text p {}
+
+.wrap .profile {}
+.wrap .profile .title {}
+.wrap .profile .contents {}
+.wrap .profile .contents .left {}
+.wrap .profile .contents .left .Profile {}
+.wrap .profile .contents .left .Profile p {}
+.wrap .profile .contents .left .Profile h3 {}
+.wrap .profile .contents .left .License {}
+.wrap .profile .contents .left .License p {}
+.wrap .profile .contents .left .License h3 {}
+.wrap .profile .contents .center {}
+.wrap .profile .contents .center p {}
+.wrap .profile .contents .center h3 {}
+.wrap .profile .contents .right {}
+.wrap .profile .contents .right p {}
+.wrap .profile .contents .right p img {}
+
+.wrap #project1 {}
+.wrap #project1 .title {}
+.wrap #project1 .contents {}
+.wrap #project1 .contents .swiper {}
+.wrap #project1 .contents .swiper .swiper-wrapper {}
+.wrap #project1 .contents .swiper .swiper-wrapper  {}
+.wrap #project1 .contents .swiper .swiper-wrapper  .left_poto {}
+.wrap #project1 .contents .swiper .swiper-wrapper  .left_poto img {}
+.wrap #project1 .contents .swiper .swiper-wrapper  .right_text {}
+.wrap #project1 .contents .swiper .swiper-wrapper  .right_text h1 {}
+.wrap #project1 .contents .swiper .swiper-wrapper  .right_text p {}
+.wrap #project1 .contents .swiper .swiper-wrapper  .right_text .btn {}
+.wrap #project1 .contents .swiper .swiper-wrapper  .right_text .btn a {}
+.wrap #project1 .contents .swiper-scrollbar {}
+.wrap #project2 {}
+.wrap #project2 .title {}
+.wrap #project2 .contents {}
+.wrap #project2 .contents[title] {}
+.wrap #project2 .contents .left_design {}
+.wrap #project2 .contents .left_design .swiper {}
+.wrap #project2 .contents .left_design .swiper .swiper-wrapper {}
+.wrap #project2 .contents .left_design .swiper .swiper-wrapper  {}
+.wrap #project2 .contents .left_design .swiper .swiper-wrapper  img {}
+.wrap #project2 .contents .right_design {}
+.wrap #project2 .contents .right_design .swiper {}
+.wrap #project2 .contents .right_design .swiper .swiper-wrapper {}
+.wrap #project2 .contents .right_design .swiper .swiper-wrapper  {}
+.wrap #project2 .contents .right_design .swiper .swiper-wrapper  img {}
+.wrap #project2 .contents .right_design .swiper-pagination {}
+.wrap #project2 .contents .right_design .popup_bg {}
+.wrap #project2 .contents .right_design .popup_bg[title] {}
+.wrap #project2 .contents .right_design .popup_bg .popup {}
+.wrap #project2 .contents .right_design .popup_bg .popup img {}
