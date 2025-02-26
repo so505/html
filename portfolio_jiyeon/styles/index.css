@@ -1,7 +1,9 @@
 body, html {background-color: black; color: #fff;}
-header {position: relative; background-color: yellow;}
+header {
+    position: relative; width: 1600px; margin: 0 auto;
+}
 header .menu_wrap {
-    position: fixed; right: 160px; top: 50px; z-index: 999;
+    position: fixed; right: 200px; top: 50px; z-index: 999;
     }
 header .menu_wrap nav {
     
@@ -28,7 +30,7 @@ header nav p a {
 
 /* */
 
-.wrap {width: 100%; margin: 0 auto;}
+.wrap {width:100%; height:max-content; height:100vh; margin: 0 auto;} 
 .wrap .main_bg {
     width: 100%; margin: 0 auto;
     position: relative;
@@ -44,28 +46,32 @@ header nav p a {
 }
 .wrap .main_bg .main_text p {
     color: #fff; font-size: 2.50rem; font-weight: 700;
-    line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 20px;
+    line-height: 1.2;   margin-bottom: 20px;
 }
 .wrap .main_bg .main_text p:nth-of-type(1) {margin-bottom: 40px;}
 .wrap .main_bg .main_text p:nth-of-type(2) {font-size: 0.94rem; font-weight: 500;}
 .wrap .main_bg .main_text p:nth-of-type(4) {font-size: 1.25rem; font-weight: 600;}
 /* 프로필 */
-
-.wrap .profile {width: 100%; margin: 100px auto; background-color: coral; }
-.wrap .profile .title {
+.wrap .title {
+    width: 1600px; margin: 0 auto;
     margin-top: 50px; font-size: 1.88rem;
     line-height: 1.7; line-height: -0.02em;
-    margin-bottom: 150px; 
+    margin-bottom: 170px; 
 }
+
+.wrap .profile {width: 1600px; margin: 100px auto; margin-bottom: 200px;  }
+
+.wrap .profile .contents p {margin-bottom: 10px;}
 .wrap .profile .contents {
     width: 100%; margin: 0 auto;
-    display: flex; flex-flow: row nowrap; justify-content: center;
+    display: flex; flex-flow: row nowrap; justify-content: center; 
+    margin-bottom: 100px;
     
 }
 .wrap .profile .contents .left {
     margin-right: 100px;
 }
-.wrap .profile .contents .left .Profile { margin-bottom: 100px;}
+.wrap .profile .contents .left .Profile { margin-bottom: 145px;}
 .wrap .profile .contents .left .Profile p:last-of-type { margin-bottom: 10px;}
 .wrap .profile .contents .left .Profile p {font-size: 0.94rem; font-weight: 300; line-height: 1.7; letter-spacing: -0.02em;}
 .wrap .profile .contents .left .Profile h3 {
@@ -79,7 +85,6 @@ header nav p a {
     font-size: 1.56rem; font-weight: 600; line-height: 1.2; letter-spacing: -0.01em; padding: 20px 0; border:1px solid #fff; border-left: 0; border-right: 0;
 }
 .wrap .profile .contents .center { padding-top: 30px;
-    background-color: cornflowerblue;
     margin-right: 100px; margin-top: 75px;
 }
 .wrap .profile .contents .center p {font-size: 0.94rem; font-weight: 300; line-height: 1.7; letter-spacing: -0.02em;}
@@ -88,45 +93,91 @@ header nav p a {
     border:1px solid #fff; border-left: 0; border-right: 0;
     font-size: 1.56rem; font-weight: 600; line-height: 1.2; letter-spacing: -0.01em;padding: 20px 0}
 .wrap .profile .contents .right {
-    margin-top: 245px;
-    background-color: darkturquoise;
+    margin-top: 300px;
     width: 140px;
     display: flex; flex-flow: row wrap; }
-.wrap .profile .contents .right p { background-color: yellow;
+.wrap .profile .contents .right p {
     width: 50px; margin-right: 5px;  padding: 10px;
 }
 .wrap .profile .contents .right p img {width: 100%;}
 
-.wrap #project1 {}
+/* 웹 프로젝트 */
+
+.wrap #project1 {width: 1600px; margin: 0 auto;  
+}
 .wrap #project1 .title {}
-.wrap #project1 .contents {}
-.wrap #project1 .contents .swiper {}
-.wrap #project1 .contents .swiper .swiper-wrapper {}
-.wrap #project1 .contents .swiper .swiper-wrapper  {}
-.wrap #project1 .contents .swiper .swiper-wrapper  .left_poto {}
-.wrap #project1 .contents .swiper .swiper-wrapper  .left_poto img {}
-.wrap #project1 .contents .swiper .swiper-wrapper  .right_text {}
-.wrap #project1 .contents .swiper .swiper-wrapper  .right_text h1 {}
-.wrap #project1 .contents .swiper .swiper-wrapper  .right_text p {}
-.wrap #project1 .contents .swiper .swiper-wrapper  .right_text .btn {}
-.wrap #project1 .contents .swiper .swiper-wrapper  .right_text .btn a {}
-.wrap #project1 .contents .swiper-scrollbar {}
+
+.wrap #project1 .contents {width:70%; margin:0 auto; display:flex; gap:40px; 
+    
+}
+.wrap #project1 .contents .swiper {transition-timing-function: linear; 
+    
+}
+.wrap #project1 .contents .swiper .swiper-wrapper { }
+.wrap #project1 .contents .swiper .swiper-wrapper .swiper-slide {}
+.wrap #project1 .contents .swiper .swiper-wrapper .swiper-slide .slid {
+    display:flex; align-items: center; justify-content: space-between; padding:50px 73px;
+    border: 1px solid #fff;    
+}
+.wrap #project1 .contents .swiper .swiper-wrapper  .left_poto {width: 530px; margin-right:70px ;}
+.wrap #project1 .contents .swiper .swiper-wrapper  .left_poto img {width: 100%;}
+.wrap #project1 .contents .swiper .swiper-wrapper  .right_text {width:calc(100% - 600px);}
+.wrap #project1 .contents .swiper .swiper-wrapper  .right_text h1 {font-size: 1.38rem; font-weight: 500; line-height: 1.7; letter-spacing: -0.02em;}
+.wrap #project1 .contents .swiper .swiper-wrapper  .right_text p {font-size: 0.88rem;line-height: 1.3; letter-spacing: -0.02em;}
+.wrap #project1 .contents .swiper .swiper-wrapper  .right_text p:nth-of-type(1){margin-bottom: 15px;}
+.wrap #project1 .contents .swiper .swiper-wrapper  .right_text p:nth-of-type(3){margin-bottom: 15px;}
+.wrap #project1 .contents .swiper .swiper-wrapper  .right_text p:nth-of-type(5){margin-bottom: 15px;}
+
+.wrap #project1 .contents .swiper .swiper-wrapper  .right_text .btn {margin:20px 0 0; display:flex;}
+.wrap #project1 .contents .swiper .swiper-wrapper  .right_text .btn a {
+    padding:10px 20px; border-radius:5px; transition: all 0.3s; line-height: 1.7; letter-spacing: -0.02em;
+    background-color: #fff; color: #000;
+}
+.wrap #project1 .contents .web .swiper-slide .right_text .btn a:nth-child(2) {background-color: #fff; color: #000; margin:0 4px;}
+.wrap #project1 .contents .web .swiper-slide .right_text .btn a:nth-child(3) {background-color: #eee; color:#000;}
+.wrap #project1 .contents .web .swiper-slide .right_text .btn a:hover {box-shadow:0 0 10px rgba(0,0,0,0.2); padding-right:40px; transform-origin:left top;}
+
+.wrap #project1 .contents .swiper-scrollbar { background-color: #222; height: 3px;}
+
+
+
 .wrap #project2 {}
-.wrap #project2 .title {}
-.wrap #project2 .contents {}
-.wrap #project2 .contents[title] {}
-.wrap #project2 .contents .left_design {}
-.wrap #project2 .contents .left_design .swiper {}
-.wrap #project2 .contents .left_design .swiper .swiper-wrapper {}
-.wrap #project2 .contents .left_design .swiper .swiper-wrapper  {}
-.wrap #project2 .contents .left_design .swiper .swiper-wrapper  img {}
-.wrap #project2 .contents .right_design {}
-.wrap #project2 .contents .right_design .swiper {}
-.wrap #project2 .contents .right_design .swiper .swiper-wrapper {}
-.wrap #project2 .contents .right_design .swiper .swiper-wrapper  {}
-.wrap #project2 .contents .right_design .swiper .swiper-wrapper  img {}
-.wrap #project2 .contents .right_design .swiper-pagination {}
-.wrap #project2 .contents .right_design .popup_bg {}
-.wrap #project2 .contents .right_design .popup_bg[title] {}
-.wrap #project2 .contents .right_design .popup_bg .popup {}
-.wrap #project2 .contents .right_design .popup_bg .popup img {}
+.wrap #project2 .contents {width: 80%; margin:50px auto 0; display:block;   }
+.wrap #project2 .contents .left {float:left; width:calc(100% - 450px)}
+.wrap #project2 .contents .design1 {
+    width:100%; margin:0; height:150px; background:#fff;  border-radius:10px;
+    margin-bottom: 30px;
+}
+.wrap #project2 .contents .design1 .swiper-wrapper {transition-timing-function: linear;}
+.wrap #project2 .contents .design2 {width:100%; margin:0; height:370px; background:#fff;  border-radius:10px; margin-bottom: 40px;}
+.wrap #project2 .contents .design2 .swiper-wrapper {transition-timing-function: linear;}
+.wrap #project2 .contents .design3 {width:400px; height:700px; background:rgb(2, 2, 2); border-radius:10px;}
+.wrap #project2 .contents .swiper-slide img {width:100%; transition: all 0.5s;}
+.wrap #project2 .contents .swiper-slide img:hover {transform:rotate(3deg)}/* 프로젝트 마우스 오버 효과 */
+/* .wrap #project2 .contents .design3 img {animation:design3img 20s infinite linear alternate;} */
+.wrap #project2 .contents .design3_set {float:right; width:400px; transform:translateY(-140px); position: relative;}
+.wrap #project2 .contents .design3_set .swiper-pagination {bottom:-30px; width:100%;}
+/* =========================================================================================== */
+.wrap #project2 .contents .popup_bg {
+    background: rgba(0,0,0,0.5);
+    position:fixed; left:0; top:0; z-index:999; width:100%; height:100vh;
+    /* padding-top:100px; */
+    display:flex; align-items: center;
+}
+.wrap #project2 .contents .popup_bg .popup {
+    width:700px; height:800px; overflow:auto; margin:0 auto; border-radius:5px;
+}
+.wrap #project2 .contents .popup_bg .popup img {width:100%;}
+/* =========================================================================================== */
+@keyframes skill {
+    0% {transform:translateY(0)}
+    100% {transform:translateY(30px)}
+}
+@keyframes design3img {
+    0% {transform:translateY(0)}
+    100% {transform:translateY(-500px)}
+}
+@keyframes txt-bnr {
+    0% {background-position-x:0;}
+    100% {background-position-x:1000px;}
+}
