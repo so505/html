@@ -81,7 +81,10 @@
 
 
 /* =========================gn2================ */
-.gnb2 {max-width: 600px;display: flex;}
+
+
+
+.gnb2 {max-width: 600px; display: flex;}
 .gnb2 a {display: block; width: 100%; line-height: 60px;}
 .gnb2 > li:hover .sub {height: 180px;}
 .gnb2 > li {width: calc(100% / 2); text-align: center; position: relative;}

@@ -1,6 +1,6 @@
 /* 웹디자인 프로젝트 소개 */
 const webslide = new Swiper('#project1 .web', {
-    autoplay:{delay:2000,},
+    autoplay:{delay:4000,},
     loop:true,
     scrollbar: {
         el: "#project1 .swiper-scrollbar",
