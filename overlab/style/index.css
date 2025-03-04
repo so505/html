@@ -1,0 +1,113 @@
+/* 헤더 */
+header {}
+header .cotainer {}
+header .cotainer h1 {}
+header .cotainer h1 a {}
+header .cotainer h1 a img {}
+header .cotainer nav {}
+header .cotainer nav ul {}
+header .cotainer nav ul li {}
+header .cotainer nav ul li a {}
+header .cotainer nav ul li img {}
+header .cotainer .header_right {}
+header .cotainer .header_right a {}
+header .cotainer .header_right a img {}
+header .cotainer .coupon {}
+header .cotainer .coupon a {}
+header .cotainer .coupon a img {}
+
+/* 메인 배경 */
+.main_bg {}
+.main_bg h2 {}
+.main_bg h2 em {}
+.main_bg h2 span {}
+.main_bg div {}
+.main_bg div a {}
+.main_bg div a img {}
+
+/* 메인 영역 */
+main {}
+
+/* 베스트 셀러 섹션 */
+main .item_bg {}
+main .item_bg .best_sellers {}
+main .item_bg .best_sellers .title {}
+main .item_bg .best_sellers .title h3 {}
+main .item_bg .best_sellers .title .btn {}
+main .item_bg .best_sellers .title .btn a {}
+main .item_bg .best_sellers .title .btn a img {}
+main .item_bg .best_sellers .best_contents {}
+main .item_bg .best_sellers .best_contents .best_item {}
+main .item_bg .best_sellers .best_contents .best_item h3 {}
+main .item_bg .best_sellers .best_contents .best_item .price {}
+
+/* 스페셜 에디션 */
+main .item_bg .special_edition {}
+main .item_bg .special_edition h3 {}
+main .item_bg .special_edition .title {}
+main .item_bg .special_edition .title p {}
+main .item_bg .special_edition .title .btn {}
+main .item_bg .special_edition .title .btn a {}
+main .item_bg .special_edition .title .btn a img {}
+main .item_bg .special_edition .special_contents {}
+main .item_bg .special_edition .special_contents .special_item {}
+main .item_bg .special_edition .special_contents .special_item h3 {}
+main .item_bg .special_edition .special_contents .special_item .price {}
+
+/* 브랜드 소개 */
+main .introduction {}
+main .introduction h3 {}
+main .introduction p {}
+main .introduction .intro_contents {}
+main .introduction .intro_contents .intro_bg {}
+main .introduction .intro_contents .intro_bg .intro_text {}
+main .introduction .intro_contents .intro_bg .intro_text p {}
+main .introduction .intro_contents .intro_bg .intro_text p img {}
+
+/* 신규 제품 */
+main .new_item {}
+main .new_item h3 {}
+main .new_item .new_contents {}
+main .new_item .new_contents a {}
+main .new_item .new_contents a img {}
+main .new_item .new_contents .new_text {}
+main .new_item .new_contents .new_text h3 {}
+main .new_item .new_contents .new_text p {}
+main .new_item .new_contents .new_text img {}
+main .new_item .btn {}
+main .new_item .btn a {}
+main .new_item .btn a img {}
+
+/* 컬래버레이션 */
+main .collaboration {}
+main .collaboration h3 {}
+main .collaboration p {}
+main .collaboration .collaboration_contents {}
+main .collaboration .collaboration_contents .object {}
+main .collaboration .collaboration_contents .object a {}
+main .collaboration .collaboration_contents .object a img {}
+main .collaboration .collaboration_contents .object p {}
+
+/* 배너 */
+main .bnr {}
+main .bnr .bnr_left {}
+main .bnr .bnr_left p {}
+main .bnr .bnr_right {}
+main .bnr .bnr_right .bnr_go {}
+main .bnr .bnr_right .bnr_go p {}
+main .bnr .bnr_right .bnr_go p span {}
+main .bnr .bnr_right .bnr_go img {}
+
+/* 비디오 */
+main video {}
+
+/* 푸터 */
+footer {}
+footer .left {}
+footer .left p {}
+footer .right {}
+footer .right a {}
+footer .right a img {}
+footer .right .sns {}
+footer .right .sns a {}
+footer .right .sns a img {}
