@@ -1,3 +1,18 @@
+// //헤더 스크롤
+// document.addEventListener("DOMContentLoaded", function () {
+//     const container = document.querySelector("header");
+//     const changePoint = 80; // 변경되는 스크롤 높이(px)
+    
+//     window.addEventListener("scroll", function () {
+//         if (window.scrollY > changePoint) {
+//             container.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+//         } else {
+//             container.style.backgroundColor = "rgba(255, 255, 255, 0)";
+//         }
+//     });
+
+
+
 //상품 썸네일 js
 //1. 작은 썸네일 이미지에 마우스를 올렸다
 //2. 위1번 대상에만 테두리가 적용된다(다른 모든 요소에 테두리가 제거) (속성리스트)

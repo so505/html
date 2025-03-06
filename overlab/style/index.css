@@ -1,29 +1,51 @@
 /* 헤더 */
-header {}
-header .cotainer {}
-header .cotainer h1 {}
-header .cotainer h1 a {}
+header {width: 100%; margin: 0 auto; }
+header .cotainer {
+    display: flex; justify-content: space-between; flex-flow: row nowrap; 
+    align-items: center;
+    position: relative; z-index: 999;
+}
+header .cotainer h1 {padding-left: 80px;width: 165px; margin-top: 15px;}
+header .cotainer h1 a {width: 165px;}
 header .cotainer h1 a img {}
-header .cotainer nav {}
-header .cotainer nav ul {}
-header .cotainer nav ul li {}
-header .cotainer nav ul li a {}
-header .cotainer nav ul li img {}
-header .cotainer .header_right {}
-header .cotainer .header_right a {}
-header .cotainer .header_right a img {}
-header .cotainer .coupon {}
-header .cotainer .coupon a {}
-header .cotainer .coupon a img {}
+header .cotainer .right {
+    width: 1272px; height: 54px;
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+    background-color: black; padding: 15px 80px 15px 50px; 
+    position: fixed; right: 0; top: 0; 
+}
+header .cotainer .right nav {}
+header .cotainer .right nav ul {display: flex;}
+header .cotainer .right nav ul li:nth-child(1),header .cotainer .right nav ul li:nth-child(9) {
+    font-size: 1.06rem; font-weight: 600; margin-right: 0;
+}
+header .cotainer .right nav ul li {margin-right: 23px; font-size: 0.94rem;letter-spacing: -0.02em; line-height: 1.2; font-weight: 500;}
+header .cotainer .right nav ul li:nth-child(2) {margin: 0 40px;}
+header .cotainer .right nav ul li:nth-child(8) {margin: 0 40px;}
+header .cotainer .right nav ul li:nth-child(7) {margin-right: 0;}
+header .cotainer .right nav ul li a {color: #fff;}
+header .cotainer .right nav ul li img {}
+header .cotainer .right .header_right {display: flex;}
+header .cotainer .right .header_right a {margin-right: 15px;}
+header .cotainer .right .header_right a img {}
+header .coupon {width: 119px; position: absolute; right: 87px;top: 46px;}
+header .coupon a {width: 119px; height: 52px;}
+header .coupon a img {width: 100%;}
 
 /* 메인 배경 */
-.main_bg {}
+.main_bg {
+    width: 100%; height: 100vh;
+    background-image: url(../images/main.bg.jpg);
+    background-position: center; background-size: cover;
+    position: absolute; top: 0;
+    text-align: center;
+}
 .main_bg h2 {}
 .main_bg h2 em {}
 .main_bg h2 span {}
-.main_bg div {}
-.main_bg div a {}
-.main_bg div a img {}
+.main_bg .btn {position: absolute; right: 50px; bottom: 50px;}
+.main_bg .btn a {width: 30px; height: 30px;}
+.main_bg .btn a img {width: 30px; }
 
 /* 메인 영역 */
 main {}
