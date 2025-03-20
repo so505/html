@@ -184,6 +184,11 @@ header nav p a:hover {background-color:#222;}
     width:700px; height:800px; overflow:auto; margin:0 auto; border-radius:5px;
 }
 .wrap #project2 .contents .popup_bg .popup img {width:100%;}
+
+
+.swiper-scrollbar-drag {background: var(--swiper-scrollbar-drag-bg-color, #ffffff);}
+
+.swiper-pagination-bullet {background: var(--swiper-pagination-bullet-inactive-color, #fbfbfb);}
 /* =========================================================================================== */
 @keyframes skill {
     0% {transform:translateY(0)}
@@ -197,3 +202,4 @@ header nav p a:hover {background-color:#222;}
     0% {background-position-x:0;}
     100% {background-position-x:1000px;}
 }
+
